@@ -18,9 +18,10 @@
     under the License.
 -->
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<!--
+
+<head>
+	<meta charset="utf-8" />
+	<!--
         Customize this policy to fit your own app's needs. For more guidance, please refer to the docs:
             https://cordova.apache.org/docs/en/latest/
         Some notes:
@@ -28,24 +29,21 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-		<!--        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
-		<meta name="format-detection" content="telephone=no" />
-		<meta name="msapplication-tap-highlight" content="no" />
-		<meta
-			name="viewport"
-			content="initial-scale=1, width=device-width, viewport-fit=cover" />
-		<meta name="color-scheme" content="light dark" />
-		<link rel="stylesheet" href="css/index.css" />
+	<!--        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="msapplication-tap-highlight" content="no" />
+	<meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover" />
+	<meta name="color-scheme" content="light dark" />
+	<link rel="stylesheet" href="css/index.css" />
 
-		<!-- FONT AWESOME ICONS -->
-		<script
-			src="https://kit.fontawesome.com/f7a107f42a.js"
-			crossorigin="anonymous"></script>
+	<!-- FONT AWESOME ICONS -->
+	<script src="https://kit.fontawesome.com/f7a107f42a.js" crossorigin="anonymous"></script>
 
-		<title>Hello World</title>
-	</head>
-	<body>
-		<!-- <div class="app">
+	<title>Hello World</title>
+</head>
+
+<body>
+	<!-- <div class="app">
             <h1>PLEASE HOLD ON</h1>
             <div id="deviceready" class="blink">
                 <p class="event listening">CONNECTING TO DEVICE</p>
@@ -53,40 +51,65 @@
             </div>
         </div> -->
 
-		<div id="home-container">
-			<div>
-				<div class="logo">
-					<img src="img/appLogo-noPad.png" alt="Logo" />
-				</div>
-				<div class="description">
-					<p>
-						This is your sign to learn Filipino Sign Language in an engaging and
-						fun way!
-					</p>
-				</div>
+	<div id="home-container">
+		<div>
+			<div class="logo">
+				<img src="img/appLogo-noPad.png" alt="Logo" />
 			</div>
-			<div class="buttons">
-				<button class="play-button">
-					<i class="fa-solid fa-play"></i>
-					Play Game
-				</button>
-				<button class="learn-button">
-					<i class="fa-solid fa-book"></i>
-					Learn FSL Vocabulary
-				</button>
-				<button class="settings-button">
-					<i class="fa-solid fa-gears"></i>
-					Settings
-				</button>
+			<div class="description">
+				<p>
+					This is your sign to learn Filipino Sign Language in an engaging and
+					fun way!
+				</p>
 			</div>
 		</div>
+		<div class="buttons">
+			<button class="play-button">
+				<i class="fa-solid fa-play"></i>
+				Play Game
+			</button>
+			<button class="learn-button">
+				<i class="fa-solid fa-book"></i>
+				Learn FSL Vocabulary
+			</button>
+			<button class="settings-button">
+				<i class="fa-solid fa-gears"></i>
+				Settings
+			</button>
+		</div>
+	</div>
 
-		<!-- CORDOVA -->
-		<script src="cordova.js"></script>
+	<!-- Create account modal -->
+	<!-- <div id="create-acc-bg">
+		<div id="create-acc-modal">
+			<div class="item">
+				<h2>Create Account</h2>
+			</div>
+			<div class="item">
+				<label for="logger" id="logger"> </label>
+			</div>
+			<div class="item">
+				<form id="login-form">
+					<div class="item">
+						<label for="username">Username: </label>
+						<input type="text" id="username-input" name="username">
+					</div>
+					<div class="item">
+						<button id="continue-button" type="submit">Continue</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div> -->
 
-		<!-- CUSTOM JS -->
-		<script src="js/index.js"></script>
+	<!-- CORDOVA -->
+	<script src="cordova.js"></script>
 
-		<!-- test -->
-	</body>
+	<!-- CUSTOM JS -->
+	<script src="js/index.js"></script>
+	<!-- <script src="js/controller/loginCon.js"></script> -->
+
+
+</body>
+
 </html>

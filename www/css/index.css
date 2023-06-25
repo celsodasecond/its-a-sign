@@ -29,12 +29,11 @@
 }
 
 * {
-	-webkit-tap-highlight-color: rgba(
-		0,
-		0,
-		0,
-		0
-	); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+	-webkit-tap-highlight-color: rgba(0,
+			0,
+			0,
+			0);
+	/* make transparent link selection, adjust last value opacity 0 to 1.0 */
 	--body-color: #e4e4e4;
 	--primary-color: #32a6e8;
 	--secondary-color: #ff5f11;
@@ -43,9 +42,12 @@
 }
 
 body {
-	-webkit-touch-callout: none; /* prevent callout to copy image, etc when tap to hold */
-	-webkit-text-size-adjust: none; /* prevent webkit from resizing text to fit */
-	-webkit-user-select: none; /* prevent copy paste, to allow, change 'none' to 'text' */
+	-webkit-touch-callout: none;
+	/* prevent callout to copy image, etc when tap to hold */
+	-webkit-text-size-adjust: none;
+	/* prevent webkit from resizing text to fit */
+	-webkit-user-select: none;
+	/* prevent copy paste, to allow, change 'none' to 'text' */
 	background-color: var(--body-color);
 	font-family: system-ui, -apple-system, -apple-system-font, "Raleway",
 		"Segoe UI", "Roboto", sans-serif;
@@ -54,8 +56,7 @@ body {
 	margin: 0px;
 	padding: 0px;
 	/* Padding to avoid the "unsafe" areas behind notches in the screen */
-	padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px)
-		env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
+	padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
 	width: 100%;
 }
 
@@ -63,15 +64,21 @@ body {
 
 .app {
 	font-family: "Raleway", sans-serif;
-	background: url(../img/appLogo.png) no-repeat center top / 170px 200px; /* 170px x 200px */
-	position: absolute; /* position in the center of the screen */
+	background: url(../img/appLogo.png) no-repeat center top / 170px 200px;
+	/* 170px x 200px */
+	position: absolute;
+	/* position in the center of the screen */
 	left: 50%;
 	top: 50%;
-	height: 50px; /* text area height */
-	width: 225px; /* text area width */
+	height: 50px;
+	/* text area height */
+	width: 225px;
+	/* text area width */
 	text-align: center;
-	padding: 180px 0px 0px 0px; /* image height is 200px (bottom 20px are overlapped with text) */
-	margin: -115px 0px 0px -112px; /* offset vertical: half of image height and text area height */
+	padding: 180px 0px 0px 0px;
+	/* image height is 200px (bottom 20px are overlapped with text) */
+	margin: -115px 0px 0px -112px;
+	/* offset vertical: half of image height and text area height */
 	/* offset horizontal: half of text area width */
 }
 
@@ -79,8 +86,10 @@ body {
 @media screen and (min-aspect-ratio: 1/1) and (min-width: 400px) {
 	.app {
 		background-position: left center;
-		padding: 75px 0px 75px 170px; /* padding-top + padding-bottom + text area = image height */
-		margin: -90px 0px 0px -198px; /* offset vertical: half of image height */
+		padding: 75px 0px 75px 170px;
+		/* padding-top + padding-bottom + text area = image height */
+		margin: -90px 0px 0px -198px;
+		/* offset vertical: half of image height */
 		/* offset horizontal: half of image width and text area width */
 	}
 }
@@ -115,6 +124,7 @@ h1 {
 #deviceready.ready .event.listening {
 	display: none;
 }
+
 #deviceready.ready .event.received {
 	display: block;
 }
@@ -123,9 +133,11 @@ h1 {
 	from {
 		opacity: 1;
 	}
+
 	50% {
 		opacity: 0.4;
 	}
+
 	to {
 		opacity: 1;
 	}
@@ -193,4 +205,44 @@ h1 {
 	font-size: 1.5rem;
 	background-color: var(--shade-of-blue);
 	border-radius: 0.5rem;
+}
+
+#create-acc-bg {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#create-acc-modal {
+	height: 80vw;
+	width: 80vw;
+	background-color: rgb(231, 231, 231);
+	border-radius: 5vw;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#create-acc-modal .item {
+	width: 100%;
+	height: 20%;
+	/* border: 2px solid green; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.item h2 {
+	font-size: 1em;
+	margin: 0;
+	align-self: center;
 }
