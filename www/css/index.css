@@ -436,3 +436,46 @@ h1 {
 .power-up i{
 	font-size: 2rem;
 }
+
+
+
+
+#create-acc-bg {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#create-acc-modal {
+	height: 80vw;
+	width: 80vw;
+	background-color: rgb(231, 231, 231);
+	border-radius: 5vw;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#create-acc-modal .item {
+	width: 100%;
+	height: 20%;
+	/* border: 2px solid green; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.item h2 {
+	font-size: 1em;
+	margin: 0;
+	align-self: center;
+}
