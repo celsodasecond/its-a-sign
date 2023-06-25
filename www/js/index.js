@@ -27,3 +27,39 @@ function onDeviceReady() {
 	console.log("Running cordova-" + cordova.platformId + "@" + cordova.version);
 	// document.getElementById('deviceready').classList.add('ready');
 }
+
+// Get the DOM elements
+const pointsElement = document.getElementById('pointsValue');
+const roundElement = document.getElementById('roundValue');
+const timerElement = document.getElementById('timerValue');
+
+// Set initial values
+let points = 0;
+let round = 1;
+let timeLeft = 60;
+
+// Update the points display
+function updatePoints(value) {
+  points = value;
+  pointsElement.textContent = points;
+}
+
+// Update the round display
+function updateRound(value) {
+  round = value;
+  roundElement.textContent = round;
+}
+
+// Update the timer display
+function updateTimer(value) {
+  timeLeft = value;
+  
+  const minutes = Math.floor(timeLeft / 60); // Calculate minutes
+  const seconds = timeLeft % 60; // Calculate seconds
+  
+  // Format the minutes and seconds with leading zeros if necessary
+  const formattedMinutes = String(minutes).padStart(1, '0');
+  const formattedSeconds = String(seconds).padStart(2, '0');
+  
+  timerElement.textContent = `${formattedMinutes}:${formattedSeconds}`;
+}

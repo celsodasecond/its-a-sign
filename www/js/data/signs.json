@@ -1,0 +1,162 @@
+[
+	{
+		"video": "gifs/ako.gif",
+		"sign-name": "Ako",
+		"sign-description": "panghalip panaong isahan, unang panauhan, nása kaukulang palagyo, at ginagamit ng tagapagsalita upang tukuyin ang kaniyang sarili. "
+	},
+	{
+		"video": "gifs/almusal.gif",
+		"sign-name": "Almusal",
+		"sign-description": "agahan"
+	},
+	{
+		"video": "gifs/bahay.gif",
+		"sign-name": "Bahay",
+		"sign-description": "tirahan, tuluyan"
+	},
+	{
+		"video": "gifs/bukas.gif",
+		"sign-name": "Bukas",
+		"sign-description": "araw kasunod ng kasalukuyang araw"
+	},
+	{
+		"video": "gifs/emergency.gif",
+		"sign-name": "Emergency",
+		"sign-description": "kailangan ng agarang atensyon"
+	},
+	{
+		"video": "gifs/excuseme.gif",
+		"sign-name": "Excuse Me",
+		"sign-description": "pagpapaumanhin o paghingi ng pahintulot dumaan"
+	},
+	{
+		"video": "gifs/gamot.gif",
+		"sign-name": "Gamot",
+		"sign-description": "sustansiyang nakapagpapagalíng ng sakít"
+	},
+	{
+		"video": "gifs/hapunan.gif",
+		"sign-name": "Hapunan",
+		"sign-description": "hulíng pagkain sa maghapon bago matulog"
+	},
+	{
+		"video": "gifs/hello.gif",
+		"sign-name": "Hello",
+		"sign-description": "paghahayag ng pagbati"
+	},
+	{
+		"video": "gifs/ikaw.gif",
+		"sign-name": "Ikaw",
+		"sign-description": "tumutukoy sa kausap"
+	},
+	{
+		"video": "gifs/inom.gif",
+		"sign-name": "Inom",
+		"sign-description": "paglagok ng tubig o anumang likido"
+	},
+	{
+		"video": "gifs/kumusta.gif",
+		"sign-name": "Kumusta",
+		"sign-description": "pagbatì at tanong sa kalagayan ng isang tao, lalo na kung noon lámang muling nakíta"
+	},
+	{
+		"video": "gifs/lola.gif",
+		"sign-name": "Lola",
+		"sign-description": "magálang na tawag sa sinumang matandang babae o tawag sa ina ng ama o ina"
+	},
+	{
+		"video": "gifs/lolo.gif",
+		"sign-name": "Lolo",
+		"sign-description": "magálang na tawag sa sinumang matandang lalaki o tawag sa ama ng ama o ina"
+	},
+	{
+		"video": "gifs/magandanggabi.gif",
+		"sign-name": "Magandang Gabi",
+		"sign-description": "magandang oras o panahon mulang paglubog ng araw hanggang muling pagsíkat nitó"
+	},
+	{
+		"video": "gifs/magandanghapon.gif",
+		"sign-name": "Magandang Hapon",
+		"sign-description": "magandang panahon mula tanghali hanggang paglubog ng araw"
+	},
+	{
+		"video": "gifs/magandangtanghali.gif",
+		"sign-name": "Magandang Tanghali",
+		"sign-description": "magandang panahon mula tanghali hanggang paglubog ng araw"
+	},
+	{
+		"video": "gifs/magandangumaga.gif",
+		"sign-name": "Magandang Umaga",
+		"sign-description": "magandang maagang bahagi ng isang araw, mula liwayway hanggang tanghali"
+	},
+	{
+		"video": "gifs/mamaya.gif",
+		"sign-name": "Mamaya",
+		"sign-description": "sa susunod na sandali o oras"
+	},
+	{
+		"video": "gifs/naiintindihan.gif",
+		"sign-name": "Naiintindihan",
+		"sign-description": "naunawan ang ideya o nais iparating ng kausap"
+	},
+	{
+		"video": "gifs/natutuhan.gif",
+		"sign-name": "Natutuhan",
+		"sign-description": "nagkaroon ng kaalaman sa isang bagay o kasanayan sa isang sining, hanapbuhay, at iba pa sa pamamagitan ng pag-aaral, pagbabasá, at katulad na karanasan"
+	},
+	{
+		"video": "gifs/ngayongaraw.gif",
+		"sign-name": "Ngayong Araw",
+		"sign-description": "sa kasalukuyan o sa araw na ito"
+	},
+	{
+		"video": "gifs/oras.gif",
+		"sign-name": "Oras",
+		"sign-description": "isa sa dalawampu’t apat na bahagi ng buong isang araw at panahong katumbas ng animnapung minuto"
+	},
+	{
+		"video": "gifs/paaralan.gif",
+		"sign-name": "Paaralan",
+		"sign-description": "pook na laan sa pagtuturo o pagsasanay"
+	},
+	{
+		"video": "gifs/pakiusap.gif",
+		"sign-name": "pakiusap",
+		"sign-description": "magálang na paghiling"
+	},
+	{
+		"video": "gifs/pangalan.gif",
+		"sign-name": "Pangalan",
+		"sign-description": "salita o kombinasyon ng mga salitâng ginagamit sa pagtawag o pagtukoy sa tao, pook, o bagay"
+	},
+	{
+		"video": "gifs/patawad.gif",
+		"sign-name": "Patawad",
+		"sign-description": "pag-aalis o pagpapaliban ng parusa hinggil sa nagawâng kasalanan"
+	},
+	{
+		"video": "gifs/salamat.gif",
+		"sign-name": "Salamat",
+		"sign-description": "pagpapahayag ng pagtanaw sa magandang gawâ at mapagbigay na kilos ng kapuwa"
+	},
+	{
+		"video": "gifs/signlanguage.gif",
+		"sign-name": "Sign Language",
+		"sign-description": "isang uri ng manwal at biswal (namamasdan ng mata) na komunikasyon na ginagamit ng mga mamamayang bingi at pipi"
+	},
+	{
+		"video": "gifs/trabaho.gif",
+		"sign-name": "Trabaho",
+		"sign-description": "hanapbuhay o gawain"
+	},
+	{
+		"video": "gifs/tulong.gif",
+		"sign-name": "Tulong",
+		"sign-description": "gamit, pera, o serbisyo na ibinibigay sa nangangailangan"
+	},
+	{
+		"video": "gifs/welcome.gif",
+		"sign-name": "Welcome",
+		"sign-description": "walang anuman"
+	}
+]

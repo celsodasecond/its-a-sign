@@ -38,7 +38,7 @@
 	--primary-color: #32a6e8;
 	--secondary-color: #ff5f11;
 	--shade-of-blue: #056bb1;
-	/* border: 1px solid red; */
+	/*border: 1px solid red;*/
 }
 
 body {
@@ -206,7 +206,248 @@ h1 {
 	background-color: var(--shade-of-blue);
 	border-radius: 0.5rem;
 }
+/***************** VOCABULARY *****************/
 
+/***************** Game *****************/
+#easy-container {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	font-family: "Raleway", sans-serif;
+}
+
+/***************** GAME HEADER - REUSABLE *****************/
+.header {
+	margin-top: 3rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	color: var(--shade-of-blue);
+}
+
+.points {
+	order: 1;
+	margin-right: auto;
+	margin-left: 1.5rem;
+	border-radius: 10px;
+	background: #64C9FB;
+	box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.50) inset;
+	width: 4.5em;
+	height: 2rem;
+	flex-shrink: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5rem;
+	font-size: 1rem;
+	color: white;
+	font-family: "Cubao", sans-serif;
+}
+
+.points i {
+	margin-left: .5rem;
+}
+
+.points span {
+	flex-grow: 1;
+	text-align: right;
+	font-family: "Cubao", sans-serif;
+	font-size: 1.2rem;
+}
+
+.round {
+	order: 2;
+	position: relative;
+	text-align: center;
+	width: 5rem;
+	height: 5rem;
+	border-radius: 50%;
+	border: 7px solid var(--secondary-color);
+	margin: 0 auto;
+	margin-left: -.2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: Arial, sans-serif;
+	font-size: 16rem;
+	color: var(--secondary-color);
+}
+
+.round span {
+	font-size: 3rem;
+	position: absolute;
+	font-family: "Cubao", sans-serif;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.round::before {
+	content: "Round";
+	font-size: 0.8rem;
+	position: absolute;
+	top: 15px;
+	left: 0;
+	right: 0;
+}
+
+.timer {
+	order: 3;
+	margin-right: 1.5rem;
+	border-radius: 10px;
+	background: #64C9FB;
+	box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.50) inset;
+	width: 4.5em;
+	height: 2rem;
+	flex-shrink: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5rem;
+	font-size: 1rem;
+	color: white;
+	font-family: "Cubao", sans-serif;
+}
+
+.timer i {
+	margin-left: .5rem;
+}
+
+.timer span {
+	flex-grow: 1;
+	text-align: right;
+	font-family: "Cubao", sans-serif;
+	font-size: 1.2rem;
+}
+
+
+/***************** WORD TO GUESS *****************/
+.phrase {
+	margin-top: 9rem;
+	position: fixed;
+}
+
+.phrase h3 {
+	font-size: 1.8rem;
+	font-weight: bold;
+	font-family: "Cubao", sans-serif;
+	color: var(--secondary-color);
+	letter-spacing: 0.1rem;
+}
+
+/***************** CARDS *****************/
+.card-container{
+	margin-top: 15rem;
+}
+.card-row {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	margin-top: .2rem;
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+}
+
+.flip-card {
+	width: 9.5rem;
+	height: 11rem;
+	perspective: 62rem;
+	margin: .5rem;
+}
+
+.flip-card-inner {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	transform-style: preserve-3d;
+	transition: transform 0.6s;
+}
+
+.flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	backface-visibility: hidden;
+}
+
+.flip-card-front {
+	background-image: url(../img/bg1.jpg);
+	display: flex;
+	border: .2rem solid var(--shade-of-blue);
+	background-size: cover;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5rem;
+	border-radius: .5rem;
+}
+
+.flip-card-back {
+	background-image: url(../gifs/almusal.gif);
+	background-size: cover;
+	background-position: center;
+	color: white;
+	transform: rotateY(180deg);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: .5rem;
+}
+
+/***************** POWER UPS *****************/
+.power-up{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+}
+
+.power-up-button {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 1rem;
+}
+
+.power-up-button button {
+	width: 3.5rem;
+	height: 3.5rem;
+	border-radius: 50%;
+	border: none;
+	background-color: var(--secondary-color);
+	color: white;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+.power-up-button span {
+	color: #FF5F11;
+	text-align: center;
+	font-size: 1rem;
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	letter-spacing: -0.4px;
+	margin-top: .2rem;
+}
+.power-up i{
+	font-size: 2rem;
+}
 #create-acc-bg {
 	position: fixed;
 	width: 100%;
