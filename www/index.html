@@ -18,10 +18,9 @@
     under the License.
 -->
 <html>
-
-<head>
-  <meta charset="utf-8" />
-  <!--
+  <head>
+    <meta charset="utf-8" />
+    <!--
         Customize this policy to fit your own app's needs. For more guidance, please refer to the docs:
             https://cordova.apache.org/docs/en/latest/
         Some notes:
@@ -29,643 +28,691 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-  <!--        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
-  <meta name="format-detection" content="telephone=no" />
-  <meta name="msapplication-tap-highlight" content="no" />
-  <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover" />
-  <meta name="color-scheme" content="light dark" />
-  <link rel="stylesheet" href="css/index.css" />
+    <!--        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta
+      name="viewport"
+      content="initial-scale=1, width=device-width, viewport-fit=cover"
+    />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="stylesheet" href="css/index.css" />
 
-  <!-- FONT AWESOME ICONS -->
-  <script src="https://kit.fontawesome.com/f7a107f42a.js" crossorigin="anonymous"></script>
+    <!-- FONT AWESOME ICONS -->
+    <script
+      src="https://kit.fontawesome.com/f7a107f42a.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <title>It's a sign</title>
-</head>
+    <title>It's a sign</title>
+  </head>
 
-<body>
-  <!---HOME SECTION-->
-  <div id="home-container">
-    <div>
-      <div class="logo">
-        <img src="img/appLogo-noPad.png" alt="Logo" />
+  <body>
+    <!---HOME SECTION-->
+    <div id="home-container">
+      <div>
+        <div class="logo">
+          <img src="img/appLogo-noPad.png" alt="Logo" />
+        </div>
+        <div class="description">
+          <p>
+            This is your sign to learn Filipino Sign Language in an engaging and
+            fun way!
+          </p>
+        </div>
       </div>
-      <div class="description">
-        <p>
-          This is your sign to learn Filipino Sign Language in an engaging and
-          fun way!
-        </p>
-      </div>
-    </div>
-    <div class="buttons">
-      <button id="play-button" class="play-button">
-        <i class="fa-solid fa-play"></i>
-        Play Game
-      </button>
-      <a href="vocabulary.html">
-        <button class="learn-button">
-          <i class="fa-solid fa-book"></i>
-          Vocabulary
+      <div class="buttons">
+        <button id="play-button" class="play-button">
+          <i class="fa-solid fa-play"></i>
+          Play Game
         </button>
-      </a>
-      <button id="instruction-button" class="instruction-button">
-        <i class="fa-solid fa-gears"></i>
-        How to Play
-      </button>
-    </div>
-
-    <img src="avatars/1.png" id="profile-button" alt="" />
-  </div>
-
-  <!--DIFFICULTIES-->
-  <div id="difficulties-container" hidden>
-    <div class="modal-content">
-      <button class="back-button">
-        <i class="fa-solid fa-arrow-left"></i>
-      </button>
-      <h2>CHOOSE YOUR DIFFICULTY</h2>
-
-      <button id="easy-button" class="difficulty-button">Easy</button>
-      <button id="intermediate-button" class="difficulty-button">
-        Intermediate
-      </button>
-      <button id="hard-button" class="difficulty-button">Hard</button>
-      <!-- <button class="difficulty-button">Expert</button>
-				<button class="difficulty-button">Extreme</button> -->
-    </div>
-  </div>
-
-  <!-- INSTRUCTION -->
-  <!-- INSTRUCTION -->
-  <div id="instruction-main-container">
-    <div class="instruction-container active">
-      <div class="instruction">
-        <div class="home-button">
-          <i class="fa-solid fa-house"></i>
-        </div>
-        <div class="instruction-header">Choose Your Level of Difficulty</div>
-        <div class="instruction-content">
-          <p>
-            You can choose the difficulty based on your knowledge on sign
-            language
-          </p>
-        </div>
-        <div class="image-container">
-          <img src="../www/img/1.png" alt="" />
-        </div>
-        <div class="instruction-content">
-          <p><span>Easy: </span> Guess the phrase by flipping 2 cards</p>
-          <p>
-            <span>Intermediate:</span> Guess the phrase by flipping 3 cards
-          </p>
-          <p><span>Hard:</span> Guess the phrase by flipping 4 cards</p>
-        </div>
-      </div>
-      <div class="buttons-container">
-        <button class="previous-button">PREVIOUS</button>
-        <button class="next-button">NEXT</button>
-      </div>
-    </div>
-
-    <div class="instruction-container">
-      <div class="instruction">
-        <div class="home-button">
-          <i class="fa-solid fa-house"></i>
-        </div>
-        <div class="instruction-header">Memorize the Phrase</div>
-        <div class="instruction-content">
-          <p>
-            Each card contains a word. Your goal is to flip the cards in the
-            correct sequence to match the given phrase.
-          </p>
-        </div>
-        <div class="image-container">
-          <img src="../www/img/2.png" class="img-big" alt="" />
-        </div>
-      </div>
-      <div class="buttons-container">
-        <button class="previous-button">PREVIOUS</button>
-        <button class="next-button">NEXT</button>
-      </div>
-    </div>
-
-    <div class="instruction-container">
-      <div class="instruction">
-        <div class="home-button">
-          <i class="fa-solid fa-house"></i>
-        </div>
-        <div class="instruction-header">Flip the Cards</div>
-        <div class="instruction-content">
-          <p>
-            Flip two cards to match the sequence. Progress to the next round
-            if you succeed, or try again if you don't.
-          </p>
-        </div>
-        <div class="image-container">
-          <img src="../www/img/3.png" class="img-big" alt="" />
-        </div>
-      </div>
-      <div class="buttons-container">
-        <button class="previous-button">PREVIOUS</button>
-        <button class="next-button">NEXT</button>
-      </div>
-    </div>
-
-    <div class="instruction-container">
-      <div class="instruction">
-        <div class="home-button">
-          <i class="fa-solid fa-house"></i>
-        </div>
-        <div class="instruction-header">Race Against the Time</div>
-        <div class="instruction-content">
-          <p>
-            You have 60 seconds to complete all the rounds within your chosen
-            difficulty level. Keep an eye on the timer!
-          </p>
-        </div>
-        <div class="image-container">
-          <img src="../www/img/4.png" alt="" />
-        </div>
-      </div>
-      <div class="buttons-container">
-        <button class="previous-button">PREVIOUS</button>
-        <button class="next-button">NEXT</button>
-      </div>
-    </div>
-
-    <div class="instruction-container">
-      <div class="instruction">
-        <div class="home-button">
-          <i class="fa-solid fa-house"></i>
-        </div>
-        <div class="instruction-header">Earn Stars</div>
-        <div class="instruction-content">
-          <p>
-            After each completed round, you will earn stars based on the
-            difficulty level:
-          </p>
-          <p><span>Easy: </span> 1 star</p>
-          <p><span>Intermediate:</span> 2 stars</p>
-          <p><span>Hard:</span> 3 stars</p>
-          <p></p>
-        </div>
-        <div class="image-container">
-          <img src="../www/img/5.png" alt="" />
-        </div>
-      </div>
-      <div class="buttons-container">
-        <button class="previous-button">PREVIOUS</button>
-        <button class="next-button">NEXT</button>
-      </div>
-    </div>
-
-    <div class="instruction-container">
-      <div class="instruction">
-        <div class="home-button">
-          <i class="fa-solid fa-house"></i>
-        </div>
-        <div class="instruction-header">Powerup with Stars</div>
-        <div class="instruction-content">
-          <p>
-            You can use the stars you've earned to buy power-ups that can
-            assist you during the game:
-          </p>
-        </div>
-        <div class="image-container">
-          <img src="../www/img/6.png" alt="" />
-        </div>
-      </div>
-      <div class="buttons-container">
-        <button class="previous-button">PREVIOUS</button>
-        <button class="next-button">NEXT</button>
-      </div>
-    </div>
-
-    <div class="instruction-container">
-      <div class="instruction">
-        <div class="home-button">
-          <i class="fa-solid fa-house"></i>
-        </div>
-        <div class="instruction-header">Powerup with Stars</div>
-        <div class="instruction-content">
-          <p>
-            <span>Hint (Cost: 2 stars): </span>Reveals one correct card
-            randomly.
-          </p>
-        </div>
-        <div class="image-container">
-          <img src="../www/img/6.1.1.png" class="img-big" alt="" />
-        </div>
-      </div>
-      <div class="buttons-container">
-        <button class="previous-button">PREVIOUS</button>
-        <button class="next-button">NEXT</button>
-      </div>
-    </div>
-
-    <div class="instruction-container">
-      <div class="instruction">
-        <div class="home-button">
-          <i class="fa-solid fa-house"></i>
-        </div>
-        <div class="instruction-header">Powerup with Stars</div>
-        <div class="instruction-content">
-          <p>
-            <span>Reveal (Cost: 3 stars): </span>Shows all correct cards, but
-            not their sequence.
-          </p>
-        </div>
-        <div class="image-container">
-          <img src="../www/img/6.2.1.png" class="img-big" alt="" />
-        </div>
-      </div>
-      <div class="buttons-container">
-        <button class="previous-button">PREVIOUS</button>
-        <button class="next-button">NEXT</button>
-      </div>
-    </div>
-
-    <div class="instruction-container">
-      <div class="instruction">
-        <div class="home-button">
-          <i class="fa-solid fa-house"></i>
-        </div>
-        <div class="instruction-header">Powerup with Stars</div>
-        <div class="instruction-content">
-          <p>
-            <span>Time Freeze (Cost: 2 stars): </span>Pauses the timer for 3
-            seconds.
-          </p>
-        </div>
-      </div>
-      <div class="buttons-container">
-        <button class="previous-button">PREVIOUS</button>
-        <button class="next-button">NEXT</button>
-      </div>
-    </div>
-
-    <div class="instruction-container">
-      <div class="instruction">
-        <div class="home-button">
-          <i class="fa-solid fa-house"></i>
-        </div>
-        <div class="instruction-header">Aim for a High Score</div>
-        <div class="instruction-content">
-          <p>
-            Your score is determined by the time remaining at the end of each
-            difficulty level. The faster you complete the rounds, the higher
-            your score!
-          </p>
-        </div>
-      </div>
-      <div class="buttons-container">
-        <button class="previous-button">PREVIOUS</button>
-        <button class="next-button">NEXT</button>
-      </div>
-    </div>
-
-    <div class="instruction-container">
-      <div class="instruction">
-        <div class="home-button">
-          <i class="fa-solid fa-house"></i>
-        </div>
-        <div class="instruction-header">
-          Send Your Score to the Leaderboards
-        </div>
-        <div class="instruction-content">
-          <p>
-            After finishing a difficulty level, you can check your score and
-            submit it to the leaderboards. See how you stack up against other
-            players!
-          </p>
-        </div>
-      </div>
-      <div class="buttons-container">
-        <button class="previous-button">PREVIOUS</button>
-        <button class="next-button">NEXT</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- EASY DIFFICULTY -->
-  <div class="container easy-container" id="easy-container">
-    <!-- HEADER -->
-    <div class="header">
-      <div class="points">
-        <i class="fa-solid fa-star"></i> <span class="pointsValue">11</span>
-      </div>
-      <div class="round">
-        <span class="roundValue">1</span>
-      </div>
-      <div class="timer">
-        <i class="fa-solid fa-hourglass-start"></i>
-        <span class="timerValue">1:00</span>
-      </div>
-    </div>
-
-    <!-- PHRASE TO GUESS -->
-    <div class="phrase">
-      <div class="words" id="easy-phrase"></div>
-    </div>
-
-    <!-- CARDS -->
-    <div class="card-container" id="easy-card-container"></div>
-
-    <!-- POWERUP BUTTONS -->
-    <div class="power-up">
-      <div class="power-up-button">
-        <button class="hint-button">
-          <i class="fa-solid fa-lightbulb"></i>
-        </button>
-        <span>Hint</span>
-      </div>
-      <div class="power-up-button">
-        <button class="reveal-button">
-          <i class="fa-solid fa-eye"></i>
-        </button>
-        <span>Reveal</span>
-      </div>
-      <div class="power-up-button">
-        <button class="freeze-button">
-          <i class="fa-solid fa-clock"></i>
-        </button>
-        <span>Freeze</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- INTERMEDIATE DIFFICULTY -->
-  <div class="container intermediate-container" id="intermediate-container">
-    <!-- HEADER -->
-    <div class="header">
-      <div class="points">
-        <i class="fa-solid fa-star"></i> <span class="pointsValue">11</span>
-      </div>
-      <div class="round">
-        <span class="roundValue">1</span>
-      </div>
-      <div class="timer">
-        <i class="fa-solid fa-hourglass-start"></i>
-        <span class="timerValue">1:00</span>
-      </div>
-    </div>
-
-    <!-- PHRASE TO GUESS -->
-    <div class="phrase">
-      <div class="words" id="intermediate-phrase"></div>
-    </div>
-
-    <!-- CARDS -->
-    <div class="card-container" id="intermediate-card-container"></div>
-
-    <!-- POWERUP BUTTONS -->
-    <div class="power-up">
-      <div class="power-up-button">
-        <button class="hint-button">
-          <i class="fa-solid fa-lightbulb"></i>
-        </button>
-        <span>Hint</span>
-      </div>
-      <div class="power-up-button">
-        <button class="reveal-button">
-          <i class="fa-solid fa-eye"></i>
-        </button>
-        <span>Reveal</span>
-      </div>
-      <div class="power-up-button">
-        <button class="freeze-button">
-          <i class="fa-solid fa-clock"></i>
-        </button>
-        <span>Freeze</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- HARD DIFFICULTY -->
-  <div class="container hard-container" id="hard-container">
-    <!-- HEADER -->
-    <div class="header">
-      <div class="points">
-        <i class="fa-solid fa-star"></i> <span class="pointsValue"></span>
-      </div>
-      <div class="round">
-        <span class="roundValue">1</span>
-      </div>
-      <div class="timer">
-        <i class="fa-solid fa-hourglass-start"></i>
-        <span class="timerValue">1:00</span>
-      </div>
-    </div>
-
-    <!-- PHRASE TO GUESS -->
-    <div class="phrase">
-      <div class="words" id="hard-phrase"></div>
-    </div>
-
-    <!-- CARDS -->
-    <div class="card-container" id="hard-card-container"></div>
-
-    <!-- POWERUP BUTTONS -->
-    <div class="power-up">
-      <div class="power-up-button">
-        <button class="hint-button">
-          <i class="fa-solid fa-lightbulb"></i>
-        </button>
-        <span>Hint</span>
-      </div>
-      <div class="power-up-button">
-        <button class="reveal-button">
-          <i class="fa-solid fa-eye"></i>
-        </button>
-        <span>Reveal</span>
-      </div>
-      <div class="power-up-button">
-        <button class="freeze-button">
-          <i class="fa-solid fa-clock"></i>
-        </button>
-        <span>Freeze</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- Create account modal -->
-  <div id="create-account-bg">
-    <div id="create-account-modal">
-      <div class="item" id="item-1">
-        <h2>Create Account</h2>
-      </div>
-      <div class="item" id="item-2">
-        <div class="border">
-          <img src="avatars/1.png" id="user-avatar" alt="" />
-        </div>
-        <button id="avatar-button" type="submit">Edit</button>
-      </div>
-      <div class="item" id="item-3">
-        <label for="logger" id="logger"> </label>
-      </div>
-      <div class="item" id="item-4">
-        <form id="login-form">
-          <label for="username" id="username-label">Username: </label>
-          <input type="text" id="username-input" name="username" maxlength="16" />
-          <button id="continue-button" type="submit">Continue</button>
-          <div id="loading-animation-createacc"></div>
-        </form>
-      </div>
-    </div>
-  </div>
-
-  <div id="user-avatar-bg">
-    <div id="user-avatar-modal">
-      <div class="user-avatar-header">
-        <h2>Select Avatar</h2>
-      </div>
-      <div id="user-avatar-group">
-        <div class="item">
-          <img src="avatars/1.png" alt="" onclick="selectAvatar(this, 1)" />
-        </div>
-        <div class="item">
-          <img src="avatars/2.png" alt="" onclick="selectAvatar(this, 2)" />
-        </div>
-        <div class="item">
-          <img src="avatars/3.png" alt="" onclick="selectAvatar(this, 3)" />
-        </div>
-        <div class="item">
-          <img src="avatars/4.png" alt="" onclick="selectAvatar(this, 4)" />
-        </div>
-        <div class="item">
-          <img src="avatars/5.png" alt="" onclick="selectAvatar(this, 5)" />
-        </div>
-        <div class="item">
-          <img src="avatars/6.png" alt="" onclick="selectAvatar(this, 6)" />
-        </div>
-        <div class="item">
-          <img src="avatars/7.png" alt="" onclick="selectAvatar(this, 7)" />
-        </div>
-        <div class="item">
-          <img src="avatars/8.png" alt="" onclick="selectAvatar(this, 8)" />
-        </div>
-        <div class="item">
-          <img src="avatars/9.png" alt="" onclick="selectAvatar(this, 9)" />
-        </div>
-        <div class="item">
-          <img src="avatars/10.png" alt="" onclick="selectAvatar(this, 10)" />
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- User Profile -->
-  <div id="profile-container-bg">
-    <div class="modal">
-      <div class="modal-item">
-        <h3>Username</h3>
-        <p id="username-profile">johndoe</p>
-      </div>
-      <div class="modal-item">
-        <h4>Highest Score</h4>
-        <p id="high-score-profile">5000</p>
-      </div>
-      <div class="modal-item">
-        <h4>Best Words</h4>
-        <p>Ano</p>
-        <p>Ano</p>
-        <p>Ano</p>
-      </div>
-    </div>
-  </div>
-
-
-  <p id="mobile-logger"></p>
-  <!-- Game Over -->
-  <div id="gameover-container-bg">
-    <div class="modal">
-      <div id="leaderboard-title-1">
-        <h3 id="gameover-msg"></h3>
-      </div>
-
-      <!-- COLAPSE WHEN NOT IN 4TH ROUND -->
-      <div id="leaderboard-container">
-        <div id="leaderboard-avatar-group-1">
-          <img id="first-place-crown" class="place-crown" src="avatars/crown.png" alt="" />
-          <img id="first-place-avatar" class="place-avatar" src="avatars/1.png" alt="" />
-          <p id="first-place-username" class="place-username">test</p>
-          <p id="first-place-score" class="place-score">12</p>
-          <p id="first-place-sentence" class="place-sentence"></p>
-        </div>
-        <div id="leaderboard-avatar-group-2">
-          <img id="second-place-crown" class="place-crown" src="avatars/crown2.png" alt="" />
-          <img id="second-place-avatar" class="place-avatar" src="avatars/1.png" alt="" />
-          <p id="second-place-username" class="place-username">test</p>
-          <p id="second-place-score" class="place-score">12</p>
-          <p id="second-place-sentence" class="place-sentence"></p>
-        </div>
-        <div id="leaderboard-avatar-group-3">
-          <img id="third-place-crown" class="place-crown" src="avatars/crown3.png" alt="" />
-          <img id="third-place-avatar" class="place-avatar" src="avatars/1.png" alt="" />
-          <p id="third-place-username" class="place-username">test</p>
-          <p id="third-place-score" class="place-score">12</p>
-          <p id="third-place-sentence" class="place-sentence"></p>
-        </div>
-        <div id="leaderboard-avatar-group-current">
-          <img id="current-place-avatar" class="item flex-in" src="avatars/1.png" alt="" />
-          <div class="item flex-in">
-            <p id="current-place-position" class="">12</p>
-          </div>
-          <div class="item flex-1">
-            <p id="current-place-username" class="">test</p>
-          </div>
-          <div class="item flex-in">
-            <p id="current-place-score" class="">12</p>
-          </div>
-          <!-- <p id="current-place-sentence" class=""></p> -->
-        </div>
-      </div>
-
-      <div class="leaderboard-group-row">
-        <div class="">
-          <button id="refresh-leaderboard-button" class="">
-            Refresh Leaderboards
+        <a href="vocabulary.html">
+          <button class="learn-button">
+            <i class="fa-solid fa-book"></i>
+            Vocabulary
           </button>
-          <div id="loading-animation-leaderboard-refresh" class="loading-animation"></div>
+        </a>
+        <button id="instruction-button" class="instruction-button">
+          <i class="fa-solid fa-gears"></i>
+          How to Play
+        </button>
+      </div>
+
+      <img src="avatars/1.png" id="profile-button" alt="" />
+    </div>
+
+    <!--DIFFICULTIES-->
+    <div id="difficulties-container" hidden>
+      <div class="modal-content">
+        <button class="back-button">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <h2>CHOOSE YOUR DIFFICULTY</h2>
+
+        <button id="easy-button" class="difficulty-button">Easy</button>
+        <button id="intermediate-button" class="difficulty-button">
+          Intermediate
+        </button>
+        <button id="hard-button" class="difficulty-button">Hard</button>
+        <!-- <button class="difficulty-button">Expert</button>
+				<button class="difficulty-button">Extreme</button> -->
+      </div>
+    </div>
+
+    <!-- INSTRUCTION -->
+    <!-- INSTRUCTION -->
+    <div id="instruction-main-container">
+      <div class="instruction-container active">
+        <div class="instruction">
+          <div class="home-button">
+            <i class="fa-solid fa-house"></i>
+          </div>
+          <div class="instruction-header">Choose Your Level of Difficulty</div>
+          <div class="instruction-content">
+            <p>
+              You can choose the difficulty based on your knowledge on sign
+              language
+            </p>
+          </div>
+          <div class="image-container">
+            <img src="img/1.png" alt="" />
+          </div>
+          <div class="instruction-content">
+            <p><span>Easy: </span> Guess the phrase by flipping 2 cards</p>
+            <p>
+              <span>Intermediate:</span> Guess the phrase by flipping 3 cards
+            </p>
+            <p><span>Hard:</span> Guess the phrase by flipping 4 cards</p>
+          </div>
         </div>
-        <div class="">
-          <select id="difficulty-dropdown">
-            <option value="easy">Easy</option>
-            <option value="intermediate">Intermediate</option>
-            <option value="hard">Hard</option>
-          </select>
+        <div class="buttons-container">
+          <button class="previous-button">PREVIOUS</button>
+          <button class="next-button">NEXT</button>
         </div>
       </div>
-      <div class="leaderboard-group-row">
-        <h2 id="display-score">Score: </h2>
-        <h2 id="display-sentence"> Sentence: </h2>
-      </div>
-      <div class="leaderboard-group-row">
-        <form id="send-highscore-form" action="POST">
-          <button id="send-highscore-button" type="submit">Send Score</button>
-          <div id="loading-animation-leaderboard-send" class="loading-animation"></div>
-        </form>
-        <div>
-          <button id="play-again-button">Play Again</button>
+
+      <div class="instruction-container">
+        <div class="instruction">
+          <div class="home-button">
+            <i class="fa-solid fa-house"></i>
+          </div>
+          <div class="instruction-header">Memorize the Phrase</div>
+          <div class="instruction-content">
+            <p>
+              Each card contains a word. Your goal is to flip the cards in the
+              correct sequence to match the given phrase.
+            </p>
+          </div>
+          <div class="image-container">
+            <img src="img/2.png" class="img-big" alt="" />
+          </div>
         </div>
-        <div>
-          <button id="home-button">Home</button>
+        <div class="buttons-container">
+          <button class="previous-button">PREVIOUS</button>
+          <button class="next-button">NEXT</button>
+        </div>
+      </div>
+
+      <div class="instruction-container">
+        <div class="instruction">
+          <div class="home-button">
+            <i class="fa-solid fa-house"></i>
+          </div>
+          <div class="instruction-header">Flip the Cards</div>
+          <div class="instruction-content">
+            <p>
+              Flip two cards to match the sequence. Progress to the next round
+              if you succeed, or try again if you don't.
+            </p>
+          </div>
+          <div class="image-container">
+            <img src="img/3.png" class="img-big" alt="" />
+          </div>
+        </div>
+        <div class="buttons-container">
+          <button class="previous-button">PREVIOUS</button>
+          <button class="next-button">NEXT</button>
+        </div>
+      </div>
+
+      <div class="instruction-container">
+        <div class="instruction">
+          <div class="home-button">
+            <i class="fa-solid fa-house"></i>
+          </div>
+          <div class="instruction-header">Race Against the Time</div>
+          <div class="instruction-content">
+            <p>
+              You have 60 seconds to complete all the rounds within your chosen
+              difficulty level. Keep an eye on the timer!
+            </p>
+          </div>
+          <div class="image-container">
+            <img src="img/4.png" alt="" />
+          </div>
+        </div>
+        <div class="buttons-container">
+          <button class="previous-button">PREVIOUS</button>
+          <button class="next-button">NEXT</button>
+        </div>
+      </div>
+
+      <div class="instruction-container">
+        <div class="instruction">
+          <div class="home-button">
+            <i class="fa-solid fa-house"></i>
+          </div>
+          <div class="instruction-header">Earn Stars</div>
+          <div class="instruction-content">
+            <p>
+              After each completed round, you will earn stars based on the
+              difficulty level:
+            </p>
+            <p><span>Easy: </span> 1 star</p>
+            <p><span>Intermediate:</span> 2 stars</p>
+            <p><span>Hard:</span> 3 stars</p>
+            <p></p>
+          </div>
+          <div class="image-container">
+            <img src="img/5.png" alt="" />
+          </div>
+        </div>
+        <div class="buttons-container">
+          <button class="previous-button">PREVIOUS</button>
+          <button class="next-button">NEXT</button>
+        </div>
+      </div>
+
+      <div class="instruction-container">
+        <div class="instruction">
+          <div class="home-button">
+            <i class="fa-solid fa-house"></i>
+          </div>
+          <div class="instruction-header">Powerup with Stars</div>
+          <div class="instruction-content">
+            <p>
+              You can use the stars you've earned to buy power-ups that can
+              assist you during the game:
+            </p>
+          </div>
+          <div class="image-container">
+            <img src="img/6.png" alt="" />
+          </div>
+        </div>
+        <div class="buttons-container">
+          <button class="previous-button">PREVIOUS</button>
+          <button class="next-button">NEXT</button>
+        </div>
+      </div>
+
+      <div class="instruction-container">
+        <div class="instruction">
+          <div class="home-button">
+            <i class="fa-solid fa-house"></i>
+          </div>
+          <div class="instruction-header">Powerup with Stars</div>
+          <div class="instruction-content">
+            <p>
+              <span>Hint (Cost: 2 stars): </span>Reveals one correct card
+              randomly.
+            </p>
+          </div>
+          <div class="image-container">
+            <img src="img/6.1.1.png" class="img-big" alt="" />
+          </div>
+        </div>
+        <div class="buttons-container">
+          <button class="previous-button">PREVIOUS</button>
+          <button class="next-button">NEXT</button>
+        </div>
+      </div>
+
+      <div class="instruction-container">
+        <div class="instruction">
+          <div class="home-button">
+            <i class="fa-solid fa-house"></i>
+          </div>
+          <div class="instruction-header">Powerup with Stars</div>
+          <div class="instruction-content">
+            <p>
+              <span>Reveal (Cost: 3 stars): </span>Shows all correct cards, but
+              not their sequence.
+            </p>
+          </div>
+          <div class="image-container">
+            <img src="img/6.2.1.png" class="img-big" alt="" />
+          </div>
+        </div>
+        <div class="buttons-container">
+          <button class="previous-button">PREVIOUS</button>
+          <button class="next-button">NEXT</button>
+        </div>
+      </div>
+
+      <div class="instruction-container">
+        <div class="instruction">
+          <div class="home-button">
+            <i class="fa-solid fa-house"></i>
+          </div>
+          <div class="instruction-header">Powerup with Stars</div>
+          <div class="instruction-content">
+            <p>
+              <span>Time Freeze (Cost: 2 stars): </span>Pauses the timer for 3
+              seconds.
+            </p>
+          </div>
+        </div>
+        <div class="buttons-container">
+          <button class="previous-button">PREVIOUS</button>
+          <button class="next-button">NEXT</button>
+        </div>
+      </div>
+
+      <div class="instruction-container">
+        <div class="instruction">
+          <div class="home-button">
+            <i class="fa-solid fa-house"></i>
+          </div>
+          <div class="instruction-header">Aim for a High Score</div>
+          <div class="instruction-content">
+            <p>
+              Your score is determined by the time remaining at the end of each
+              difficulty level. The faster you complete the rounds, the higher
+              your score!
+            </p>
+          </div>
+        </div>
+        <div class="buttons-container">
+          <button class="previous-button">PREVIOUS</button>
+          <button class="next-button">NEXT</button>
+        </div>
+      </div>
+
+      <div class="instruction-container">
+        <div class="instruction">
+          <div class="home-button">
+            <i class="fa-solid fa-house"></i>
+          </div>
+          <div class="instruction-header">
+            Send Your Score to the Leaderboards
+          </div>
+          <div class="instruction-content">
+            <p>
+              After finishing a difficulty level, you can check your score and
+              submit it to the leaderboards. See how you stack up against other
+              players!
+            </p>
+          </div>
+        </div>
+        <div class="buttons-container">
+          <button class="previous-button">PREVIOUS</button>
+          <button class="next-button">NEXT</button>
         </div>
       </div>
     </div>
-  </div>
 
+    <!-- EASY DIFFICULTY -->
+    <div class="container easy-container" id="easy-container">
+      <!-- HEADER -->
+      <div class="header">
+        <div class="points">
+          <i class="fa-solid fa-star"></i> <span class="pointsValue">11</span>
+        </div>
+        <div class="round">
+          <span class="roundValue">1</span>
+        </div>
+        <div class="timer">
+          <i class="fa-solid fa-hourglass-start"></i>
+          <span class="timerValue">1:00</span>
+        </div>
+      </div>
 
-  <!-- CORDOVA -->
-  <script src="cordova.js"></script>
+      <!-- PHRASE TO GUESS -->
+      <div class="phrase">
+        <div class="words" id="easy-phrase"></div>
+      </div>
 
-  <!-- CUSTOM JS -->
-  <script src="js/utilities/gameManager.js"></script>
-  <script src="js/index.js"></script>
-  <script src="js/controller/loginCon.js"></script>
-  <script src="js/controller/sessionCon.js"></script>
-  <script src="js/controller/leaderbordsCon.js"></script>
-  <script src="js/utilities/fileManager.js"></script>
-  <script src="js/view/profileView.js"></script>
-</body>
+      <!-- CARDS -->
+      <div class="card-container" id="easy-card-container"></div>
 
+      <!-- POWERUP BUTTONS -->
+      <div class="power-up">
+        <div class="power-up-button">
+          <button class="hint-button">
+            <i class="fa-solid fa-lightbulb"></i>
+          </button>
+          <span>Hint</span>
+        </div>
+        <div class="power-up-button">
+          <button class="reveal-button">
+            <i class="fa-solid fa-eye"></i>
+          </button>
+          <span>Reveal</span>
+        </div>
+        <div class="power-up-button">
+          <button class="freeze-button">
+            <i class="fa-solid fa-clock"></i>
+          </button>
+          <span>Freeze</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- INTERMEDIATE DIFFICULTY -->
+    <div class="container intermediate-container" id="intermediate-container">
+      <!-- HEADER -->
+      <div class="header">
+        <div class="points">
+          <i class="fa-solid fa-star"></i> <span class="pointsValue">11</span>
+        </div>
+        <div class="round">
+          <span class="roundValue">1</span>
+        </div>
+        <div class="timer">
+          <i class="fa-solid fa-hourglass-start"></i>
+          <span class="timerValue">1:00</span>
+        </div>
+      </div>
+
+      <!-- PHRASE TO GUESS -->
+      <div class="phrase">
+        <div class="words" id="intermediate-phrase"></div>
+      </div>
+
+      <!-- CARDS -->
+      <div class="card-container" id="intermediate-card-container"></div>
+
+      <!-- POWERUP BUTTONS -->
+      <div class="power-up">
+        <div class="power-up-button">
+          <button class="hint-button">
+            <i class="fa-solid fa-lightbulb"></i>
+          </button>
+          <span>Hint</span>
+        </div>
+        <div class="power-up-button">
+          <button class="reveal-button">
+            <i class="fa-solid fa-eye"></i>
+          </button>
+          <span>Reveal</span>
+        </div>
+        <div class="power-up-button">
+          <button class="freeze-button">
+            <i class="fa-solid fa-clock"></i>
+          </button>
+          <span>Freeze</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- HARD DIFFICULTY -->
+    <div class="container hard-container" id="hard-container">
+      <!-- HEADER -->
+      <div class="header">
+        <div class="points">
+          <i class="fa-solid fa-star"></i> <span class="pointsValue"></span>
+        </div>
+        <div class="round">
+          <span class="roundValue">1</span>
+        </div>
+        <div class="timer">
+          <i class="fa-solid fa-hourglass-start"></i>
+          <span class="timerValue">1:00</span>
+        </div>
+      </div>
+
+      <!-- PHRASE TO GUESS -->
+      <div class="phrase">
+        <div class="words" id="hard-phrase"></div>
+      </div>
+
+      <!-- CARDS -->
+      <div class="card-container" id="hard-card-container"></div>
+
+      <!-- POWERUP BUTTONS -->
+      <div class="power-up">
+        <div class="power-up-button">
+          <button class="hint-button">
+            <i class="fa-solid fa-lightbulb"></i>
+          </button>
+          <span>Hint</span>
+        </div>
+        <div class="power-up-button">
+          <button class="reveal-button">
+            <i class="fa-solid fa-eye"></i>
+          </button>
+          <span>Reveal</span>
+        </div>
+        <div class="power-up-button">
+          <button class="freeze-button">
+            <i class="fa-solid fa-clock"></i>
+          </button>
+          <span>Freeze</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Create account modal -->
+    <div id="create-account-bg">
+      <div id="create-account-modal">
+        <div class="item" id="item-1">
+          <h2>Create Account</h2>
+        </div>
+        <div class="item" id="item-2">
+          <div class="border">
+            <img src="avatars/1.png" id="user-avatar" alt="" />
+          </div>
+          <button id="avatar-button" type="submit">Edit</button>
+        </div>
+        <div class="item" id="item-3">
+          <label for="logger" id="logger"> </label>
+        </div>
+        <div class="item" id="item-4">
+          <form id="login-form">
+            <label for="username" id="username-label">Username: </label>
+            <input
+              type="text"
+              id="username-input"
+              name="username"
+              maxlength="16"
+            />
+            <button id="continue-button" type="submit">Continue</button>
+            <div id="loading-animation-createacc"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="user-avatar-bg">
+      <div id="user-avatar-modal">
+        <div class="user-avatar-header">
+          <h2>Select Avatar</h2>
+        </div>
+        <div id="user-avatar-group">
+          <div class="item">
+            <img src="avatars/1.png" alt="" onclick="selectAvatar(this, 1)" />
+          </div>
+          <div class="item">
+            <img src="avatars/2.png" alt="" onclick="selectAvatar(this, 2)" />
+          </div>
+          <div class="item">
+            <img src="avatars/3.png" alt="" onclick="selectAvatar(this, 3)" />
+          </div>
+          <div class="item">
+            <img src="avatars/4.png" alt="" onclick="selectAvatar(this, 4)" />
+          </div>
+          <div class="item">
+            <img src="avatars/5.png" alt="" onclick="selectAvatar(this, 5)" />
+          </div>
+          <div class="item">
+            <img src="avatars/6.png" alt="" onclick="selectAvatar(this, 6)" />
+          </div>
+          <div class="item">
+            <img src="avatars/7.png" alt="" onclick="selectAvatar(this, 7)" />
+          </div>
+          <div class="item">
+            <img src="avatars/8.png" alt="" onclick="selectAvatar(this, 8)" />
+          </div>
+          <div class="item">
+            <img src="avatars/9.png" alt="" onclick="selectAvatar(this, 9)" />
+          </div>
+          <div class="item">
+            <img src="avatars/10.png" alt="" onclick="selectAvatar(this, 10)" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- User Profile -->
+    <div id="profile-container-bg">
+      <div class="modal">
+        <div class="modal-item">
+          <h3>Username</h3>
+          <p id="username-profile">johndoe</p>
+        </div>
+        <div class="modal-item">
+          <h4>Highest Score</h4>
+          <p id="high-score-profile">5000</p>
+        </div>
+        <div class="modal-item">
+          <h4>Best Words</h4>
+          <p>Ano</p>
+          <p>Ano</p>
+          <p>Ano</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Game Over -->
+    <div id="gameover-container-bg">
+      <div class="modal">
+        <div id="leaderboard-title-1">
+          <h3 id="gameover-msg"></h3>
+        </div>
+
+        <!-- COLAPSE WHEN NOT IN 4TH ROUND -->
+        <div id="leaderboard-container">
+          <div id="leaderboard-avatar-group-1">
+            <img
+              id="first-place-crown"
+              class="place-crown"
+              src="avatars/crown.png"
+              alt=""
+            />
+            <img
+              id="first-place-avatar"
+              class="place-avatar"
+              src="avatars/1.png"
+              alt=""
+            />
+            <p id="first-place-username" class="place-username">test</p>
+            <p id="first-place-score" class="place-score">12</p>
+            <p id="first-place-sentence" class="place-sentence"></p>
+          </div>
+          <div id="leaderboard-avatar-group-2">
+            <img
+              id="second-place-crown"
+              class="place-crown"
+              src="avatars/crown2.png"
+              alt=""
+            />
+            <img
+              id="second-place-avatar"
+              class="place-avatar"
+              src="avatars/1.png"
+              alt=""
+            />
+            <p id="second-place-username" class="place-username">test</p>
+            <p id="second-place-score" class="place-score">12</p>
+            <p id="second-place-sentence" class="place-sentence"></p>
+          </div>
+          <div id="leaderboard-avatar-group-3">
+            <img
+              id="third-place-crown"
+              class="place-crown"
+              src="avatars/crown3.png"
+              alt=""
+            />
+            <img
+              id="third-place-avatar"
+              class="place-avatar"
+              src="avatars/1.png"
+              alt=""
+            />
+            <p id="third-place-username" class="place-username">test</p>
+            <p id="third-place-score" class="place-score">12</p>
+            <p id="third-place-sentence" class="place-sentence"></p>
+          </div>
+          <div id="leaderboard-avatar-group-current">
+            <img
+              id="current-place-avatar"
+              class="item flex-in"
+              src="avatars/1.png"
+              alt=""
+            />
+            <div class="item flex-in">
+              <p id="current-place-position" class="">12</p>
+            </div>
+            <div class="item flex-1">
+              <p id="current-place-username" class="">test</p>
+            </div>
+            <div class="item flex-in">
+              <p id="current-place-score" class="">12</p>
+            </div>
+            <!-- <p id="current-place-sentence" class=""></p> -->
+          </div>
+        </div>
+
+        <div class="leaderboard-group-row">
+          <div class="">
+            <button id="refresh-leaderboard-button" class="">
+              Refresh Leaderboards
+            </button>
+            <div
+              id="loading-animation-leaderboard-refresh"
+              class="loading-animation"
+            ></div>
+          </div>
+          <div class="">
+            <select id="difficulty-dropdown">
+              <option value="easy">Easy</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="hard">Hard</option>
+            </select>
+          </div>
+        </div>
+        <div class="leaderboard-group-row">
+          <h2 id="display-score">Score:</h2>
+          <h2 id="display-sentence">Sentence:</h2>
+        </div>
+        <div class="leaderboard-group-row">
+          <form id="send-highscore-form" action="POST">
+            <button id="send-highscore-button" type="submit">Send Score</button>
+            <div
+              id="loading-animation-leaderboard-send"
+              class="loading-animation"
+            ></div>
+          </form>
+          <div>
+            <button id="play-again-button">Play Again</button>
+          </div>
+          <div>
+            <button id="home-button">Home</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CORDOVA -->
+    <script src="cordova.js"></script>
+
+    <!-- CUSTOM JS -->
+    <script src="js/utilities/gameManager.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/controller/loginCon.js"></script>
+    <script src="js/controller/sessionCon.js"></script>
+    <script src="js/controller/leaderbordsCon.js"></script>
+    <script src="js/utilities/fileManager.js"></script>
+    <script src="js/view/profileView.js"></script>
+  </body>
 </html>

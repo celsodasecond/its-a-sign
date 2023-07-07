@@ -18,8 +18,7 @@
     under the License.
 -->
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <!--
             Customize this policy to fit your own app's needs. For more guidance, please refer to the docs:
@@ -32,804 +31,848 @@
     <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
     <meta name="format-detection" content="telephone=no" />
     <meta name="msapplication-tap-highlight" content="no" />
-    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover" />
+    <meta
+      name="viewport"
+      content="initial-scale=1, width=device-width, viewport-fit=cover"
+    />
     <meta name="color-scheme" content="light dark" />
     <link rel="stylesheet" href="css/vocab.css" />
     <!-- FONT AWESOME ICONS -->
-    <script src="https://kit.fontawesome.com/f7a107f42a.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/f7a107f42a.js"
+      crossorigin="anonymous"
+    ></script>
     <title>It's a sign</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="vocabulary-container">
-        <div class="word-container">
-            <div class="vocab-header">
-                <a href="index.html">
-                    <div class="home-button">
-                        <i class="fa-solid fa-house"></i>
-                    </div>
-                </a>
+      <div class="word-container">
+        <div class="vocab-header">
+          <a href="index.html">
+            <div class="home-button">
+              <i class="fa-solid fa-house"></i>
+            </div>
+          </a>
 
-                <div class="title">
-                    FSL Vocabulary
-                </div>
-                <div class="list-button" onclick="toggleList()">
-                    <i class="fas fa-list"></i>
-                </div>
-            </div>
-
-            <div class="list-section" style="display: none;">
-                <ul>
-                    <h4>One-hand Signs</h4>
-                    <li id="ako" class="selected">Ako</li>
-                    <li id="almusal">Almusal</li>
-                    <li id="bukas">Bukas</li>
-                    <li id="emergency">Emergency</li>
-                    <li id="hapunan">Hapunan</li>
-                    <li id="hello">Hello</li>
-                    <li id="ikaw">Ikaw</li>
-                    <li id="inom">Inom</li>
-                    <li id="lola">Lola</li>
-                    <li id="lolo">Lolo</li>
-                    <li id="naiintindihan">Naiintindihan</li>
-                    <li id="pakiusap">Pakiusap</li>
-                    <li id="patawad">Patawad</li>
-                    <li id="welcome">Welcome</li>
-                </ul>
-            </div>
-
-            <div class="list-section1" style="display: none;">
-                <ul>
-                    <h4>Two-hand Signs</h4>
-                    <li id="bahay" class="selected">Bahay</li>
-                    <li id="excuseme">Excuse me</li>
-                    <li id="gamot">Gamot</li>
-                    <li id="kumusta">Kumusta</li>
-                    <li id="magandanggabi">Magandang gabi</li>
-                    <li id="magandanghapon">Magandang hapon</li>
-                    <li id="magandangtanghali">Magandang tanghali</li>
-                    <li id="magandangumaga">Magandang umaga</li>
-                    <li id="mamaya">Mamaya</li>
-                    <li id="natutuhan">Natutuhan</li>
-                    <li id="ngayongaraw">Ngayong araw</li>
-                    <li id="oras">Oras</li>
-                    <li id="paaralan">Paaralan</li>
-                    <li id="pangalan">Pangalan</li>
-                    <li id="salamat">Salamat</li>
-                    <li id="signlanguage">Sign language</li>
-                    <li id="trabaho">Trabaho</li>
-                    <li id="tulong">Tulong</li>
-                </ul>
-            </div>
-
-            <div class="toggle-container">
-                <label class="toggle-switch">
-                    <input type="checkbox" id="toggle" onchange="handleToggle()">
-                    <span class="toggle-slider"></span>
-                    <span class="toggle-label-left">One-hand signs</span>
-                    <span class="toggle-label-right">Two-hand signs</span>
-                </label>
-            </div>
-            <div class="one-hand-container">
-                <div class="word" id="ako">
-                    <div class="word-content">
-                        <div class="definition-container">
-                            <h4>Ako</h4>
-                            <div class="definition">
-                                <p>
-                                    <span style="font-weight: 900">:</span> panghalip panaong isahan, unang panauhan, nása kaukulang palagyo, at ginagamit ng tagapagsalita upang tukuyin ang
-                                    kaniyang sarili.
-                                </p>
-                            </div>
-
-                            <div class="reminder">
-                                <p>
-                                    <i class="fa-solid fa-circle-exclamation"></i> Ang pangungusap
-                                    ng mga bingi/pipi ay barok o walang tamang gramtika
-                                </p>
-                            </div>
-                        </div>
-                        <div class="video-container">
-                            <img src="../www/gifs/ako.gif">
-                        </div>
-                    </div>
-                </div>
-                <div class="word" id="almusal">
-                    <div class="word-content">
-                        <div class="definition-container">
-                            <h4>Almusal</h4>
-                            <div class="definition">
-                                <p>
-                                    <span style="font-weight: 900">:</span> Agahan
-                                    
-                                </p>
-                            </div>
-                            <div class="reminder">
-                                <p>
-                                    <i class="fa-solid fa-circle-exclamation"></i> Ang pangungusap
-                                    ng mga bingi/pipi ay barok o walang tamang gramtika
-                                </p>
-                            </div>
-                        </div>
-                        <div class="video-container">
-                            <img src="../www/gifs/almusal.gif">
-                        </div>
-                    </div>
-                </div>
-                <div class="word" id="bukas">
-                    <div class="word-content">
-                        <div class="definition-container">
-                            <h4>Bukas</h4>
-                            <div class="definition">
-                                <p>
-                                    <span style="font-weight: 900">:</span>
-                                    araw kasunod ng kasalukuyang araw
-                                </p>
-                            </div>
-                            <div class="reminder">
-                                <p>
-                                    <i class="fa-solid fa-circle-exclamation"></i> Ang pangungusap
-                                    ng mga bingi/pipi ay barok o walang tamang gramtika
-                                </p>
-                            </div>
-                        </div>
-                        <div class="video-container">
-                            <img src="../www/gifs/bukas.gif">
-                        </div>
-                    </div>
-                </div>
-                <div class="word" id="emergency">
-                    <div class="word-content">
-                        <div class="definition-container">
-                            <h4>Emergency</h4>
-                            <div class="definition">
-                                <p>
-                                    <span style="font-weight: 900">:</span>
-                                    kailangan ng agarang atensyon
-                                </p>
-                            </div>
-                            <div class="reminder">
-                                <p>
-                                    <i class="fa-solid fa-circle-exclamation"></i> Ang pangungusap
-                                    ng mga bingi/pipi ay barok o walang tamang gramtika
-                                </p>
-                            </div>
-                        </div>
-                        <div class="video-container">
-                            <img src="../www/gifs/emergency.gif">
-                        </div>
-                    </div>
-                </div>
-                <div class="word" id="hapunan">
-                    <div class="word-content">
-                        <div class="definition-container">
-                            <h4>Hapunan</h4>
-                            <div class="definition">
-                                <p>
-                                    <span style="font-weight: 900">:</span>
-                                    hulíng pagkain sa maghapon bago matulog
-                                </p>
-                            </div>
-                            <div class="reminder">
-                                <p>
-                                    <i class="fa-solid fa-circle-exclamation"></i> Ang pangungusap
-                                    ng mga bingi/pipi ay barok o walang tamang gramtika
-                                </p>
-                            </div>
-                        </div>
-                        <div class="video-container">
-                            <img src="../www/gifs/hapunan.gif">
-                        </div>
-                    </div>
-                </div>
-                <div class="word" id="hello">
-                    <div class="word-content">
-                        <div class="definition-container">
-                            <h4>Hello</h4>
-                            <div class="definition">
-                                <p>
-                                    <span style="font-weight: 900">:</span>
-                                    paghahayag ng pagbati
-                                </p>
-                            </div>
-                            <div class="reminder">
-                                <p>
-                                    <i class="fa-solid fa-circle-exclamation"></i> Ang pangungusap
-                                    ng mga bingi/pipi ay barok o walang tamang gramtika
-                                </p>
-                            </div>
-                        </div>
-                        <div class="video-container">
-                            <img src="../www/gifs/hello.gif">
-                        </div>
-                    </div>
-                </div>
-                <div class="word" id="ikaw">
-                    <div class="word-content">
-                        <div class="definition-container">
-                            <h4>Ikaw</h4>
-                            <div class="definition">
-                                <p>
-                                    <span style="font-weight: 900">:</span>
-                                    tumutukoy sa kausap
-                                </p>
-                            </div>
-                            <div class="reminder">
-                                <p>
-                                    <i class="fa-solid fa-circle-exclamation"></i> Ang pangungusap
-                                    ng mga bingi/pipi ay barok o walang tamang gramtika
-                                </p>
-                            </div>
-                        </div>
-                        <div class="video-container">
-                            <img src="../www/gifs/ikaw.gif">
-                        </div>
-                    </div>
-                </div>
-                <div class="word" id="inom">
-                    <div class="word-content">
-                        <div class="definition-container">
-                            <h4>Inom</h4>
-                            <div class="definition">
-                                <p>
-                                    <span style="font-weight: 900">:</span>
-                                    paglagok ng tubig o anumang likido
-                                </p>
-                            </div>
-                            <div class="reminder">
-                                <p>
-                                    <i class="fa-solid fa-circle-exclamation"></i> Ang pangungusap
-                                    ng mga bingi/pipi ay barok o walang tamang gramtika
-                                </p>
-                            </div>
-                        </div>
-                        <div class="video-container">
-                            <img src="../www/gifs/inom.gif">
-                        </div>
-                    </div>
-                </div>
-                <div class="word" id="lola">
-                    <div class="word-content">
-                        <div class="definition-container">
-                            <h4>Lola</h4>
-                            <div class="definition">
-                                <p>
-                                    <span style="font-weight: 900">:</span>
-                                    magálang na tawag sa sinumang matandang babae o tawag sa ina ng ama o ina
-                                </p>
-                            </div>
-                            <div class="reminder">
-                                <p>
-                                    <i class="fa-solid fa-circle-exclamation"></i> Ang pangungusap
-                                    ng mga bingi/pipi ay barok o walang tamang gramtika
-                                </p>
-                            </div>
-                        </div>
-                        <div class="video-container">
-                            <img src="../www/gifs/lola.gif">
-                        </div>
-                    </div>
-                </div>
-                <div class="word" id="lolo">
-                    <div class="word-content">
-                        <div class="definition-container">
-                            <h4>Lolo</h4>
-                            <div class="definition">
-                                <p>
-                                    <span style="font-weight: 900">:</span>
-                                    magálang na tawag sa sinumang matandang lalaki o tawag sa ama ng ama o ina
-                                </p>
-                            </div>
-                            <div class="reminder">
-                                <p>
-                                    <i class="fa-solid fa-circle-exclamation"></i> Ang pangungusap
-                                    ng mga bingi/pipi ay barok o walang tamang gramtika
-                                </p>
-                            </div>
-                        </div>
-                        <div class="video-container">
-                            <img src="../www/gifs/lolo.gif">
-                        </div>
-                    </div>
-                </div>
-                <div class="word" id="naiintindihan">
-                    <div class="word-content">
-                        <div class="definition-container">
-                            <h4>Naiintindihan</h4>
-                            <div class="definition">
-                                <p>
-                                    <span style="font-weight: 900">:</span>
-                                    naunawan ang ideya o nais iparating ng kausap
-                                </p>
-                            </div>
-                            <div class="reminder">
-                                <p>
-                                    <i class="fa-solid fa-circle-exclamation"></i> Ang pangungusap
-                                    ng mga bingi/pipi ay barok o walang tamang gramtika
-                                </p>
-                            </div>
-                        </div>
-                        <div class="video-container">
-                            <img src="../www/gifs/naiintindihan.gif">
-                        </div>
-                    </div>
-                </div>
-                <div class="word" id="pakiusap">
-                    <div class="word-content">
-                        <div class="definition-container">
-                            <h4>Pakiusap</h4>
-                            <div class="definition">
-                                <p>
-                                    <span style="font-weight: 900">:</span>
-                                    magálang na paghiling
-                                </p>
-                            </div>
-                            <div class="reminder">
-                                <p>
-                                    <i class="fa-solid fa-circle-exclamation"></i> Ang pangungusap
-                                    ng mga bingi/pipi ay barok o walang tamang gramtika
-                                </p>
-                            </div>
-                        </div>
-                        <div class="video-container">
-                            <img src="../www/gifs/pakiusap.gif">
-                        </div>
-                    </div>
-                </div>
-                <div class="word" id="patawad">
-                    <div class="word-content">
-                        <div class="definition-container">
-                            <h4>Patawad</h4>
-                            <div class="definition">
-                                <p>
-                                    <span style="font-weight: 900">:</span>
-                                    pag-aalis o pagpapaliban ng parusa hinggil sa nagawâng kasalanan
-                                </p>
-                            </div>
-                            <div class="reminder">
-                                <p>
-                                    <i class="fa-solid fa-circle-exclamation"></i> Ang pangungusap
-                                    ng mga bingi/pipi ay barok o walang tamang gramtika
-                                </p>
-                            </div>
-                        </div>
-                        <div class="video-container">
-                            <img src="../www/gifs/patawad.gif">
-                        </div>
-                    </div>
-                </div>
-                <div class="word" id="welcome">
-                    <div class="word-content">
-                        <div class="definition-container">
-                            <h4>You're welcome</h4>
-                            <div class="definition">
-                                <p>
-                                    <span style="font-weight: 900">:</span>
-                                    walang anuman
-                                </p>
-                            </div>
-                            <div class="reminder">
-                                <p>
-                                    <i class="fa-solid fa-circle-exclamation"></i> Ang pangungusap
-                                    ng mga bingi/pipi ay barok o walang tamang gramtika
-                                </p>
-                            </div>
-                        </div>
-                        <div class="video-container">
-                            <img src="../www/gifs/welcome.gif">
-                        </div>
-                    </div>
-                </div>
-                <div class="button-container" >
-                    <button class="previous-button">Previous</button>
-                    <button class="next-button">Next</button>
-                </div>
-            </div>
-            <div class="two-hand-container" style="display: none;">
-                <div class="word1" id="bahay">
-                    <div class="word-content">
-                        <div class="definition-container">
-                            <h4>Bahay</h4>
-                            <div class="definition">
-                                <p>
-                                    <span style="font-weight: 900">:</span>
-                                    tirahan, tuluyan
-                                </p>
-                            </div>
-                            <div class="reminder">
-                                <p>
-                                    <i class="fa-solid fa-circle-exclamation"></i> Ang pangungusap
-                                    ng mga bingi/pipi ay barok o walang tamang gramtika
-                                </p>
-                            </div>
-                        </div>
-                        <div class="video-container">
-                            <img src="../www/gifs/bahay.gif">
-                        </div>
-                    </div>
-                </div>
-                <div class="word1" id="excuseme">
-                    <div class="word-content">
-                        <div class="definition-container">
-                            <h4>Excuse me</h4>
-                            <div class="definition">
-                                <p>
-                                    <span style="font-weight: 900">:</span>
-                                    pagpapaumanhin o paghingi ng pahintulot dumaan
-                                </p>
-                            </div>
-                            <div class="reminder">
-                                <p>
-                                    <i class="fa-solid fa-circle-exclamation"></i> Ang pangungusap
-                                    ng mga bingi/pipi ay barok o walang tamang gramtika
-                                </p>
-                            </div>
-                        </div>
-                        <div class="video-container">
-                            <img src="../www/gifs/excuseme.gif">
-                        </div>
-                    </div>
-                </div>
-                <div class="word1" id="gamot">
-                    <div class="word-content">
-                        <div class="definition-container">
-                            <h4>Gamot</h4>
-                            <div class="definition">
-                                <p>
-                                    <span style="font-weight: 900">:</span>
-                                    sustansiyang nakapagpapagalíng ng sakít
-                                </p>
-                            </div>
-                            <div class="reminder">
-                                <p>
-                                    <i class="fa-solid fa-circle-exclamation"></i> Ang pangungusap
-                                    ng mga bingi/pipi ay barok o walang tamang gramtika
-                                </p>
-                            </div>
-                        </div>
-                        <div class="video-container">
-                            <img src="../www/gifs/gamot.gif">
-                        </div>
-                    </div>
-                </div>
-                <div class="word1" id="kumusta">
-                    <div class="word-content">
-                        <div class="definition-container">
-                            <h4>Kumusta</h4>
-                            <div class="definition">
-                                <p>
-                                    <span style="font-weight: 900">:</span>
-                                    pagbatì at tanong sa kalagayan ng isang tao, lalo na kung noon lámang muling nakíta
-                                </p>
-                            </div>
-                            <div class="reminder">
-                                <p>
-                                    <i class="fa-solid fa-circle-exclamation"></i> Ang pangungusap
-                                    ng mga bingi/pipi ay barok o walang tamang gramtika
-                                </p>
-                            </div>
-                        </div>
-                        <div class="video-container">
-                            <img src="../www/gifs/kumusta.gif">
-                        </div>
-                    </div>
-                </div>
-                <div class="word1" id="magandanggabi">
-                    <div class="word-content">
-                        <div class="definition-container">
-                            <h4>Magandang gabi</h4>
-                            <div class="definition">
-                                <p>
-                                    <span style="font-weight: 900">:</span>
-                                    magandang oras o panahon mulang paglubog ng araw hanggang muling pagsíkat nitó
-                                </p>
-                            </div>
-                            <div class="reminder">
-                                <p>
-                                    <i class="fa-solid fa-circle-exclamation"></i> Ang pangungusap
-                                    ng mga bingi/pipi ay barok o walang tamang gramtika
-                                </p>
-                            </div>
-                        </div>
-                        <div class="video-container">
-                            <img src="../www/gifs/magandanggabi.gif">
-                        </div>
-                    </div>
-                </div>
-                <div class="word1" id="magandanghapon">
-                    <div class="word-content">
-                        <div class="definition-container">
-                            <h4>Magandang hapon</h4>
-                            <div class="definition">
-                                <p>
-                                    <span style="font-weight: 900">:</span>
-                                    magandang panahon mula tanghali hanggang paglubog ng araw
-                                </p>
-                            </div>
-                            <div class="reminder">
-                                <p>
-                                    <i class="fa-solid fa-circle-exclamation"></i> Ang pangungusap
-                                    ng mga bingi/pipi ay barok o walang tamang gramtika
-                                </p>
-                            </div>
-                        </div>
-                        <div class="video-container">
-                            <img src="../www/gifs/magandanghapon.gif">
-                        </div>
-                    </div>
-                </div>
-                <div class="word1" id="magandangtanghali">
-                    <div class="word-content">
-                        <div class="definition-container">
-                            <h4>Magandang tanghali</h4>
-                            <div class="definition">
-                                <p>
-                                    <span style="font-weight: 900">:</span>
-                                    magandang panahon mula tanghali hanggang paglubog ng araw
-                                </p>
-                            </div>
-                            <div class="reminder">
-                                <p>
-                                    <i class="fa-solid fa-circle-exclamation"></i> Ang pangungusap
-                                    ng mga bingi/pipi ay barok o walang tamang gramtika
-                                </p>
-                            </div>
-                        </div>
-                        <div class="video-container">
-                            <img src="../www/gifs/magandangtanghali.gif">
-                        </div>
-                    </div>
-                </div>
-                <div class="word1" id="magandangumaga">
-                    <div class="word-content">
-                        <div class="definition-container">
-                            <h4>Magandang umaga</h4>
-                            <div class="definition">
-                                <p>
-                                    <span style="font-weight: 900">:</span>
-                                    magandang maagang bahagi ng isang araw, mula liwayway hanggang tanghali
-                                </p>
-                            </div>
-                            <div class="reminder">
-                                <p>
-                                    <i class="fa-solid fa-circle-exclamation"></i> Ang pangungusap
-                                    ng mga bingi/pipi ay barok o walang tamang gramtika
-                                </p>
-                            </div>
-                        </div>
-                        <div class="video-container">
-                            <img src="../www/gifs/magandangumaga.gif">
-                        </div>
-                    </div>
-                </div>
-                <div class="word1" id="mamaya">
-                    <div class="word-content">
-                        <div class="definition-container">
-                            <h4>Mamaya</h4>
-                            <div class="definition">
-                                <p>
-                                    <span style="font-weight: 900">:</span>
-                                    sa susunod na sandali o oras
-                                </p>
-                            </div>
-                            <div class="reminder">
-                                <p>
-                                    <i class="fa-solid fa-circle-exclamation"></i> Ang pangungusap
-                                    ng mga bingi/pipi ay barok o walang tamang gramtika
-                                </p>
-                            </div>
-                        </div>
-                        <div class="video-container">
-                            <img src="../www/gifs/mamaya.gif">
-                        </div>
-                    </div>
-                </div>
-                <div class="word1" id="natutuhan">
-                    <div class="word-content">
-                        <div class="definition-container">
-                            <h4>Natutuhan</h4>
-                            <div class="definition">
-                                <p>
-                                    <span style="font-weight: 900">:</span>
-                                    nagkaroon ng kaalaman sa isang bagay o kasanayan sa isang sining, hanapbuhay, at iba pa sa pamamagitan ng pag-aaral,
-                                    pagbabasá, at katulad na karanasan
-                                </p>
-                            </div>
-                            <div class="reminder">
-                                <p>
-                                    <i class="fa-solid fa-circle-exclamation"></i> Ang pangungusap
-                                    ng mga bingi/pipi ay barok o walang tamang gramtika
-                                </p>
-                            </div>
-                        </div>
-                        <div class="video-container">
-                            <img src="../www/gifs/natutuhan.gif">
-                        </div>
-                    </div>
-                </div>
-                <div class="word1" id="ngayongaraw">
-                    <div class="word-content">
-                        <div class="definition-container">
-                            <h4>Ngayong araw</h4>
-                            <div class="definition">
-                                <p>
-                                    <span style="font-weight: 900">:</span>
-                                    sa kasalukuyan o sa araw na ito
-                                </p>
-                            </div>
-                            <div class="reminder">
-                                <p>
-                                    <i class="fa-solid fa-circle-exclamation"></i> Ang pangungusap
-                                    ng mga bingi/pipi ay barok o walang tamang gramtika
-                                </p>
-                            </div>
-                        </div>
-                        <div class="video-container">
-                            <img src="../www/gifs/ngayongaraw.gif">
-                        </div>
-                    </div>
-                </div>
-                <div class="word1" id="oras">
-                    <div class="word-content">
-                        <div class="definition-container">
-                            <h4>Oras</h4>
-                            <div class="definition">
-                                <p>
-                                    <span style="font-weight: 900">:</span>
-                                    isa sa dalawampu’t apat na bahagi ng buong isang araw at panahong katumbas ng animnapung minuto
-                                </p>
-                            </div>
-                            <div class="reminder">
-                                <p>
-                                    <i class="fa-solid fa-circle-exclamation"></i> Ang pangungusap
-                                    ng mga bingi/pipi ay barok o walang tamang gramtika
-                                </p>
-                            </div>
-                        </div>
-                        <div class="video-container">
-                            <img src="../www/gifs/oras.gif">
-                        </div>
-                    </div>
-                </div>
-                <div class="word1" id="paaralan">
-                    <div class="word-content">
-                        <div class="definition-container">
-                            <h4>Paaralan</h4>
-                            <div class="definition">
-                                <p>
-                                    <span style="font-weight: 900">:</span>
-                                    pook na laan sa pagtuturo o pagsasanay
-                                </p>
-                            </div>
-                            <div class="reminder">
-                                <p>
-                                    <i class="fa-solid fa-circle-exclamation"></i> Ang pangungusap
-                                    ng mga bingi/pipi ay barok o walang tamang gramtika
-                                </p>
-                            </div>
-                        </div>
-                        <div class="video-container">
-                            <img src="../www/gifs/paaralan.gif">
-                        </div>
-                    </div>
-                </div>
-                <div class="word1" id="pangalan">
-                    <div class="word-content">
-                        <div class="definition-container">
-                            <h4>Pangalan</h4>
-                            <div class="definition">
-                                <p>
-                                    <span style="font-weight: 900">:</span>
-                                    salita o kombinasyon ng mga salitâng ginagamit sa pagtawag o pagtukoy sa tao, pook, o bagay
-                                </p>
-                            </div>
-                            <div class="reminder">
-                                <p>
-                                    <i class="fa-solid fa-circle-exclamation"></i> Ang pangungusap
-                                    ng mga bingi/pipi ay barok o walang tamang gramtika
-                                </p>
-                            </div>
-                        </div>
-                        <div class="video-container">
-                            <img src="../www/gifs/pangalan.gif">
-                        </div>
-                    </div>
-                </div>
-                <div class="word1" id="salamat">
-                    <div class="word-content">
-                        <div class="definition-container">
-                            <h4>Salamat</h4>
-                            <div class="definition">
-                                <p>
-                                    <span style="font-weight: 900">:</span>
-                                    pagpapahayag ng pagtanaw sa magandang gawâ at mapagbigay na kilos ng kapuwa
-                                </p>
-                            </div>
-                            <div class="reminder">
-                                <p>
-                                    <i class="fa-solid fa-circle-exclamation"></i> Ang pangungusap
-                                    ng mga bingi/pipi ay barok o walang tamang gramtika
-                                </p>
-                            </div>
-                        </div>
-                        <div class="video-container">
-                            <img src="../www/gifs/salamat.gif">
-                        </div>
-                    </div>
-                </div>
-                <div class="word1" id="signlanguage">
-                    <div class="word-content">
-                        <div class="definition-container">
-                            <h4>Sign Language</h4>
-                            <div class="definition">
-                                <p>
-                                    <span style="font-weight: 900">:</span>
-                                    isang uri ng manwal at biswal (namamasdan ng mata) na komunikasyon na ginagamit ng mga mamamayang bingi at pipi
-                                </p>
-                            </div>
-                            <div class="reminder">
-                                <p>
-                                    <i class="fa-solid fa-circle-exclamation"></i> Ang pangungusap
-                                    ng mga bingi/pipi ay barok o walang tamang gramtika
-                                </p>
-                            </div>
-                        </div>
-                        <div class="video-container">
-                            <img src="../www/gifs/signlanguage.gif">
-                        </div>
-                    </div>
-                </div>
-                <div class="word1" id="trabaho">
-                    <div class="word-content">
-                        <div class="definition-container">
-                            <h4>Trabaho</h4>
-                            <div class="definition">
-                                <p>
-                                    <span style="font-weight: 900">:</span>
-                                    hanapbuhay o gawain
-                                </p>
-                            </div>
-                            <div class="reminder">
-                                <p>
-                                    <i class="fa-solid fa-circle-exclamation"></i> Ang pangungusap
-                                    ng mga bingi/pipi ay barok o walang tamang gramtika
-                                </p>
-                            </div>
-                        </div>
-                        <div class="video-container">
-                            <img src="../www/gifs/trabaho.gif">
-                        </div>
-                    </div>
-                </div>
-                <div class="word1" id="tulong">
-                    <div class="word-content">
-                        <div class="definition-container">
-                            <h4>Tulong</h4>
-                            <div class="definition">
-                                <p>
-                                    <span style="font-weight: 900">:</span>
-                                    hanapbuhay o gawain
-                                </p>
-                            </div>
-                            <div class="reminder">
-                                <p>
-                                    <i class="fa-solid fa-circle-exclamation"></i> 
-                                    Ang pangungusap
-                                    ng mga bingi/pipi ay barok o walang tamang gramtika
-                                </p>
-                            </div>
-                        </div>
-                        <div class="video-container">
-                            <img src="../www/gifs/tulong.gif">
-                        </div>
-                    </div>
-                </div>
-                <div class="button-container">
-                    <button class="previous-button">Previous</button>
-                    <button class="next-button">Next</button>
-                </div>
-            </div>
+          <div class="title">FSL Vocabulary</div>
+          <div class="list-button" onclick="toggleList()">
+            <i class="fas fa-list"></i>
+          </div>
         </div>
+
+        <div class="list-section" style="display: none">
+          <ul>
+            <h4>One-hand Signs</h4>
+            <li id="ako" class="selected">Ako</li>
+            <li id="almusal">Almusal</li>
+            <li id="bukas">Bukas</li>
+            <li id="emergency">Emergency</li>
+            <li id="hapunan">Hapunan</li>
+            <li id="hello">Hello</li>
+            <li id="ikaw">Ikaw</li>
+            <li id="inom">Inom</li>
+            <li id="lola">Lola</li>
+            <li id="lolo">Lolo</li>
+            <li id="naiintindihan">Naiintindihan</li>
+            <li id="pakiusap">Pakiusap</li>
+            <li id="patawad">Patawad</li>
+            <li id="welcome">Welcome</li>
+          </ul>
+        </div>
+
+        <div class="list-section1" style="display: none">
+          <ul>
+            <h4>Two-hand Signs</h4>
+            <li id="bahay" class="selected">Bahay</li>
+            <li id="excuseme">Excuse me</li>
+            <li id="gamot">Gamot</li>
+            <li id="kumusta">Kumusta</li>
+            <li id="magandanggabi">Magandang gabi</li>
+            <li id="magandanghapon">Magandang hapon</li>
+            <li id="magandangtanghali">Magandang tanghali</li>
+            <li id="magandangumaga">Magandang umaga</li>
+            <li id="mamaya">Mamaya</li>
+            <li id="natutuhan">Natutuhan</li>
+            <li id="ngayongaraw">Ngayong araw</li>
+            <li id="oras">Oras</li>
+            <li id="paaralan">Paaralan</li>
+            <li id="pangalan">Pangalan</li>
+            <li id="salamat">Salamat</li>
+            <li id="signlanguage">Sign language</li>
+            <li id="trabaho">Trabaho</li>
+            <li id="tulong">Tulong</li>
+          </ul>
+        </div>
+
+        <div class="toggle-container">
+          <label class="toggle-switch">
+            <input type="checkbox" id="toggle" onchange="handleToggle()" />
+            <span class="toggle-slider"></span>
+            <span class="toggle-label-left">One-hand signs</span>
+            <span class="toggle-label-right">Two-hand signs</span>
+          </label>
+        </div>
+        <div class="one-hand-container">
+          <div class="word" id="ako">
+            <div class="word-content">
+              <div class="definition-container">
+                <h4>Ako</h4>
+                <div class="definition">
+                  <p>
+                    <span style="font-weight: 900">:</span> panghalip panaong
+                    isahan, unang panauhan, nása kaukulang palagyo, at ginagamit
+                    ng tagapagsalita upang tukuyin ang kaniyang sarili.
+                  </p>
+                </div>
+
+                <div class="reminder">
+                  <p>
+                    <i class="fa-solid fa-circle-exclamation"></i> Ang
+                    pangungusap ng mga bingi/pipi ay barok o walang tamang
+                    gramtika
+                  </p>
+                </div>
+              </div>
+              <div class="video-container">
+                <img src="gifs/ako.gif" />
+              </div>
+            </div>
+          </div>
+          <div class="word" id="almusal">
+            <div class="word-content">
+              <div class="definition-container">
+                <h4>Almusal</h4>
+                <div class="definition">
+                  <p><span style="font-weight: 900">:</span> Agahan</p>
+                </div>
+                <div class="reminder">
+                  <p>
+                    <i class="fa-solid fa-circle-exclamation"></i> Ang
+                    pangungusap ng mga bingi/pipi ay barok o walang tamang
+                    gramtika
+                  </p>
+                </div>
+              </div>
+              <div class="video-container">
+                <img src="gifs/almusal.gif" />
+              </div>
+            </div>
+          </div>
+          <div class="word" id="bukas">
+            <div class="word-content">
+              <div class="definition-container">
+                <h4>Bukas</h4>
+                <div class="definition">
+                  <p>
+                    <span style="font-weight: 900">:</span>
+                    araw kasunod ng kasalukuyang araw
+                  </p>
+                </div>
+                <div class="reminder">
+                  <p>
+                    <i class="fa-solid fa-circle-exclamation"></i> Ang
+                    pangungusap ng mga bingi/pipi ay barok o walang tamang
+                    gramtika
+                  </p>
+                </div>
+              </div>
+              <div class="video-container">
+                <img src="gifs/bukas.gif" />
+              </div>
+            </div>
+          </div>
+          <div class="word" id="emergency">
+            <div class="word-content">
+              <div class="definition-container">
+                <h4>Emergency</h4>
+                <div class="definition">
+                  <p>
+                    <span style="font-weight: 900">:</span>
+                    kailangan ng agarang atensyon
+                  </p>
+                </div>
+                <div class="reminder">
+                  <p>
+                    <i class="fa-solid fa-circle-exclamation"></i> Ang
+                    pangungusap ng mga bingi/pipi ay barok o walang tamang
+                    gramtika
+                  </p>
+                </div>
+              </div>
+              <div class="video-container">
+                <img src="gifs/emergency.gif" />
+              </div>
+            </div>
+          </div>
+          <div class="word" id="hapunan">
+            <div class="word-content">
+              <div class="definition-container">
+                <h4>Hapunan</h4>
+                <div class="definition">
+                  <p>
+                    <span style="font-weight: 900">:</span>
+                    hulíng pagkain sa maghapon bago matulog
+                  </p>
+                </div>
+                <div class="reminder">
+                  <p>
+                    <i class="fa-solid fa-circle-exclamation"></i> Ang
+                    pangungusap ng mga bingi/pipi ay barok o walang tamang
+                    gramtika
+                  </p>
+                </div>
+              </div>
+              <div class="video-container">
+                <img src="gifs/hapunan.gif" />
+              </div>
+            </div>
+          </div>
+          <div class="word" id="hello">
+            <div class="word-content">
+              <div class="definition-container">
+                <h4>Hello</h4>
+                <div class="definition">
+                  <p>
+                    <span style="font-weight: 900">:</span>
+                    paghahayag ng pagbati
+                  </p>
+                </div>
+                <div class="reminder">
+                  <p>
+                    <i class="fa-solid fa-circle-exclamation"></i> Ang
+                    pangungusap ng mga bingi/pipi ay barok o walang tamang
+                    gramtika
+                  </p>
+                </div>
+              </div>
+              <div class="video-container">
+                <img src="gifs/hello.gif" />
+              </div>
+            </div>
+          </div>
+          <div class="word" id="ikaw">
+            <div class="word-content">
+              <div class="definition-container">
+                <h4>Ikaw</h4>
+                <div class="definition">
+                  <p>
+                    <span style="font-weight: 900">:</span>
+                    tumutukoy sa kausap
+                  </p>
+                </div>
+                <div class="reminder">
+                  <p>
+                    <i class="fa-solid fa-circle-exclamation"></i> Ang
+                    pangungusap ng mga bingi/pipi ay barok o walang tamang
+                    gramtika
+                  </p>
+                </div>
+              </div>
+              <div class="video-container">
+                <img src="gifs/ikaw.gif" />
+              </div>
+            </div>
+          </div>
+          <div class="word" id="inom">
+            <div class="word-content">
+              <div class="definition-container">
+                <h4>Inom</h4>
+                <div class="definition">
+                  <p>
+                    <span style="font-weight: 900">:</span>
+                    paglagok ng tubig o anumang likido
+                  </p>
+                </div>
+                <div class="reminder">
+                  <p>
+                    <i class="fa-solid fa-circle-exclamation"></i> Ang
+                    pangungusap ng mga bingi/pipi ay barok o walang tamang
+                    gramtika
+                  </p>
+                </div>
+              </div>
+              <div class="video-container">
+                <img src="gifs/inom.gif" />
+              </div>
+            </div>
+          </div>
+          <div class="word" id="lola">
+            <div class="word-content">
+              <div class="definition-container">
+                <h4>Lola</h4>
+                <div class="definition">
+                  <p>
+                    <span style="font-weight: 900">:</span>
+                    magálang na tawag sa sinumang matandang babae o tawag sa ina
+                    ng ama o ina
+                  </p>
+                </div>
+                <div class="reminder">
+                  <p>
+                    <i class="fa-solid fa-circle-exclamation"></i> Ang
+                    pangungusap ng mga bingi/pipi ay barok o walang tamang
+                    gramtika
+                  </p>
+                </div>
+              </div>
+              <div class="video-container">
+                <img src="gifs/lola.gif" />
+              </div>
+            </div>
+          </div>
+          <div class="word" id="lolo">
+            <div class="word-content">
+              <div class="definition-container">
+                <h4>Lolo</h4>
+                <div class="definition">
+                  <p>
+                    <span style="font-weight: 900">:</span>
+                    magálang na tawag sa sinumang matandang lalaki o tawag sa
+                    ama ng ama o ina
+                  </p>
+                </div>
+                <div class="reminder">
+                  <p>
+                    <i class="fa-solid fa-circle-exclamation"></i> Ang
+                    pangungusap ng mga bingi/pipi ay barok o walang tamang
+                    gramtika
+                  </p>
+                </div>
+              </div>
+              <div class="video-container">
+                <img src="gifs/lolo.gif" />
+              </div>
+            </div>
+          </div>
+          <div class="word" id="naiintindihan">
+            <div class="word-content">
+              <div class="definition-container">
+                <h4>Naiintindihan</h4>
+                <div class="definition">
+                  <p>
+                    <span style="font-weight: 900">:</span>
+                    naunawan ang ideya o nais iparating ng kausap
+                  </p>
+                </div>
+                <div class="reminder">
+                  <p>
+                    <i class="fa-solid fa-circle-exclamation"></i> Ang
+                    pangungusap ng mga bingi/pipi ay barok o walang tamang
+                    gramtika
+                  </p>
+                </div>
+              </div>
+              <div class="video-container">
+                <img src="gifs/naiintindihan.gif" />
+              </div>
+            </div>
+          </div>
+          <div class="word" id="pakiusap">
+            <div class="word-content">
+              <div class="definition-container">
+                <h4>Pakiusap</h4>
+                <div class="definition">
+                  <p>
+                    <span style="font-weight: 900">:</span>
+                    magálang na paghiling
+                  </p>
+                </div>
+                <div class="reminder">
+                  <p>
+                    <i class="fa-solid fa-circle-exclamation"></i> Ang
+                    pangungusap ng mga bingi/pipi ay barok o walang tamang
+                    gramtika
+                  </p>
+                </div>
+              </div>
+              <div class="video-container">
+                <img src="gifs/pakiusap.gif" />
+              </div>
+            </div>
+          </div>
+          <div class="word" id="patawad">
+            <div class="word-content">
+              <div class="definition-container">
+                <h4>Patawad</h4>
+                <div class="definition">
+                  <p>
+                    <span style="font-weight: 900">:</span>
+                    pag-aalis o pagpapaliban ng parusa hinggil sa nagawâng
+                    kasalanan
+                  </p>
+                </div>
+                <div class="reminder">
+                  <p>
+                    <i class="fa-solid fa-circle-exclamation"></i> Ang
+                    pangungusap ng mga bingi/pipi ay barok o walang tamang
+                    gramtika
+                  </p>
+                </div>
+              </div>
+              <div class="video-container">
+                <img src="gifs/patawad.gif" />
+              </div>
+            </div>
+          </div>
+          <div class="word" id="welcome">
+            <div class="word-content">
+              <div class="definition-container">
+                <h4>You're welcome</h4>
+                <div class="definition">
+                  <p>
+                    <span style="font-weight: 900">:</span>
+                    walang anuman
+                  </p>
+                </div>
+                <div class="reminder">
+                  <p>
+                    <i class="fa-solid fa-circle-exclamation"></i> Ang
+                    pangungusap ng mga bingi/pipi ay barok o walang tamang
+                    gramtika
+                  </p>
+                </div>
+              </div>
+              <div class="video-container">
+                <img src="gifs/welcome.gif" />
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="previous-button">Previous</button>
+            <button class="next-button">Next</button>
+          </div>
+        </div>
+        <div class="two-hand-container" style="display: none">
+          <div class="word1" id="bahay">
+            <div class="word-content">
+              <div class="definition-container">
+                <h4>Bahay</h4>
+                <div class="definition">
+                  <p>
+                    <span style="font-weight: 900">:</span>
+                    tirahan, tuluyan
+                  </p>
+                </div>
+                <div class="reminder">
+                  <p>
+                    <i class="fa-solid fa-circle-exclamation"></i> Ang
+                    pangungusap ng mga bingi/pipi ay barok o walang tamang
+                    gramtika
+                  </p>
+                </div>
+              </div>
+              <div class="video-container">
+                <img src="gifs/bahay.gif" />
+              </div>
+            </div>
+          </div>
+          <div class="word1" id="excuseme">
+            <div class="word-content">
+              <div class="definition-container">
+                <h4>Excuse me</h4>
+                <div class="definition">
+                  <p>
+                    <span style="font-weight: 900">:</span>
+                    pagpapaumanhin o paghingi ng pahintulot dumaan
+                  </p>
+                </div>
+                <div class="reminder">
+                  <p>
+                    <i class="fa-solid fa-circle-exclamation"></i> Ang
+                    pangungusap ng mga bingi/pipi ay barok o walang tamang
+                    gramtika
+                  </p>
+                </div>
+              </div>
+              <div class="video-container">
+                <img src="gifs/excuseme.gif" />
+              </div>
+            </div>
+          </div>
+          <div class="word1" id="gamot">
+            <div class="word-content">
+              <div class="definition-container">
+                <h4>Gamot</h4>
+                <div class="definition">
+                  <p>
+                    <span style="font-weight: 900">:</span>
+                    sustansiyang nakapagpapagalíng ng sakít
+                  </p>
+                </div>
+                <div class="reminder">
+                  <p>
+                    <i class="fa-solid fa-circle-exclamation"></i> Ang
+                    pangungusap ng mga bingi/pipi ay barok o walang tamang
+                    gramtika
+                  </p>
+                </div>
+              </div>
+              <div class="video-container">
+                <img src="gifs/gamot.gif" />
+              </div>
+            </div>
+          </div>
+          <div class="word1" id="kumusta">
+            <div class="word-content">
+              <div class="definition-container">
+                <h4>Kumusta</h4>
+                <div class="definition">
+                  <p>
+                    <span style="font-weight: 900">:</span>
+                    pagbatì at tanong sa kalagayan ng isang tao, lalo na kung
+                    noon lámang muling nakíta
+                  </p>
+                </div>
+                <div class="reminder">
+                  <p>
+                    <i class="fa-solid fa-circle-exclamation"></i> Ang
+                    pangungusap ng mga bingi/pipi ay barok o walang tamang
+                    gramtika
+                  </p>
+                </div>
+              </div>
+              <div class="video-container">
+                <img src="gifs/kumusta.gif" />
+              </div>
+            </div>
+          </div>
+          <div class="word1" id="magandanggabi">
+            <div class="word-content">
+              <div class="definition-container">
+                <h4>Magandang gabi</h4>
+                <div class="definition">
+                  <p>
+                    <span style="font-weight: 900">:</span>
+                    magandang oras o panahon mulang paglubog ng araw hanggang
+                    muling pagsíkat nitó
+                  </p>
+                </div>
+                <div class="reminder">
+                  <p>
+                    <i class="fa-solid fa-circle-exclamation"></i> Ang
+                    pangungusap ng mga bingi/pipi ay barok o walang tamang
+                    gramtika
+                  </p>
+                </div>
+              </div>
+              <div class="video-container">
+                <img src="gifs/magandanggabi.gif" />
+              </div>
+            </div>
+          </div>
+          <div class="word1" id="magandanghapon">
+            <div class="word-content">
+              <div class="definition-container">
+                <h4>Magandang hapon</h4>
+                <div class="definition">
+                  <p>
+                    <span style="font-weight: 900">:</span>
+                    magandang panahon mula tanghali hanggang paglubog ng araw
+                  </p>
+                </div>
+                <div class="reminder">
+                  <p>
+                    <i class="fa-solid fa-circle-exclamation"></i> Ang
+                    pangungusap ng mga bingi/pipi ay barok o walang tamang
+                    gramtika
+                  </p>
+                </div>
+              </div>
+              <div class="video-container">
+                <img src="gifs/magandanghapon.gif" />
+              </div>
+            </div>
+          </div>
+          <div class="word1" id="magandangtanghali">
+            <div class="word-content">
+              <div class="definition-container">
+                <h4>Magandang tanghali</h4>
+                <div class="definition">
+                  <p>
+                    <span style="font-weight: 900">:</span>
+                    magandang panahon mula tanghali hanggang paglubog ng araw
+                  </p>
+                </div>
+                <div class="reminder">
+                  <p>
+                    <i class="fa-solid fa-circle-exclamation"></i> Ang
+                    pangungusap ng mga bingi/pipi ay barok o walang tamang
+                    gramtika
+                  </p>
+                </div>
+              </div>
+              <div class="video-container">
+                <img src="gifs/magandangtanghali.gif" />
+              </div>
+            </div>
+          </div>
+          <div class="word1" id="magandangumaga">
+            <div class="word-content">
+              <div class="definition-container">
+                <h4>Magandang umaga</h4>
+                <div class="definition">
+                  <p>
+                    <span style="font-weight: 900">:</span>
+                    magandang maagang bahagi ng isang araw, mula liwayway
+                    hanggang tanghali
+                  </p>
+                </div>
+                <div class="reminder">
+                  <p>
+                    <i class="fa-solid fa-circle-exclamation"></i> Ang
+                    pangungusap ng mga bingi/pipi ay barok o walang tamang
+                    gramtika
+                  </p>
+                </div>
+              </div>
+              <div class="video-container">
+                <img src="gifs/magandangumaga.gif" />
+              </div>
+            </div>
+          </div>
+          <div class="word1" id="mamaya">
+            <div class="word-content">
+              <div class="definition-container">
+                <h4>Mamaya</h4>
+                <div class="definition">
+                  <p>
+                    <span style="font-weight: 900">:</span>
+                    sa susunod na sandali o oras
+                  </p>
+                </div>
+                <div class="reminder">
+                  <p>
+                    <i class="fa-solid fa-circle-exclamation"></i> Ang
+                    pangungusap ng mga bingi/pipi ay barok o walang tamang
+                    gramtika
+                  </p>
+                </div>
+              </div>
+              <div class="video-container">
+                <img src="gifs/mamaya.gif" />
+              </div>
+            </div>
+          </div>
+          <div class="word1" id="natutuhan">
+            <div class="word-content">
+              <div class="definition-container">
+                <h4>Natutuhan</h4>
+                <div class="definition">
+                  <p>
+                    <span style="font-weight: 900">:</span>
+                    nagkaroon ng kaalaman sa isang bagay o kasanayan sa isang
+                    sining, hanapbuhay, at iba pa sa pamamagitan ng pag-aaral,
+                    pagbabasá, at katulad na karanasan
+                  </p>
+                </div>
+                <div class="reminder">
+                  <p>
+                    <i class="fa-solid fa-circle-exclamation"></i> Ang
+                    pangungusap ng mga bingi/pipi ay barok o walang tamang
+                    gramtika
+                  </p>
+                </div>
+              </div>
+              <div class="video-container">
+                <img src="gifs/natutuhan.gif" />
+              </div>
+            </div>
+          </div>
+          <div class="word1" id="ngayongaraw">
+            <div class="word-content">
+              <div class="definition-container">
+                <h4>Ngayong araw</h4>
+                <div class="definition">
+                  <p>
+                    <span style="font-weight: 900">:</span>
+                    sa kasalukuyan o sa araw na ito
+                  </p>
+                </div>
+                <div class="reminder">
+                  <p>
+                    <i class="fa-solid fa-circle-exclamation"></i> Ang
+                    pangungusap ng mga bingi/pipi ay barok o walang tamang
+                    gramtika
+                  </p>
+                </div>
+              </div>
+              <div class="video-container">
+                <img src="gifs/ngayongaraw.gif" />
+              </div>
+            </div>
+          </div>
+          <div class="word1" id="oras">
+            <div class="word-content">
+              <div class="definition-container">
+                <h4>Oras</h4>
+                <div class="definition">
+                  <p>
+                    <span style="font-weight: 900">:</span>
+                    isa sa dalawampu’t apat na bahagi ng buong isang araw at
+                    panahong katumbas ng animnapung minuto
+                  </p>
+                </div>
+                <div class="reminder">
+                  <p>
+                    <i class="fa-solid fa-circle-exclamation"></i> Ang
+                    pangungusap ng mga bingi/pipi ay barok o walang tamang
+                    gramtika
+                  </p>
+                </div>
+              </div>
+              <div class="video-container">
+                <img src="gifs/oras.gif" />
+              </div>
+            </div>
+          </div>
+          <div class="word1" id="paaralan">
+            <div class="word-content">
+              <div class="definition-container">
+                <h4>Paaralan</h4>
+                <div class="definition">
+                  <p>
+                    <span style="font-weight: 900">:</span>
+                    pook na laan sa pagtuturo o pagsasanay
+                  </p>
+                </div>
+                <div class="reminder">
+                  <p>
+                    <i class="fa-solid fa-circle-exclamation"></i> Ang
+                    pangungusap ng mga bingi/pipi ay barok o walang tamang
+                    gramtika
+                  </p>
+                </div>
+              </div>
+              <div class="video-container">
+                <img src="gifs/paaralan.gif" />
+              </div>
+            </div>
+          </div>
+          <div class="word1" id="pangalan">
+            <div class="word-content">
+              <div class="definition-container">
+                <h4>Pangalan</h4>
+                <div class="definition">
+                  <p>
+                    <span style="font-weight: 900">:</span>
+                    salita o kombinasyon ng mga salitâng ginagamit sa pagtawag o
+                    pagtukoy sa tao, pook, o bagay
+                  </p>
+                </div>
+                <div class="reminder">
+                  <p>
+                    <i class="fa-solid fa-circle-exclamation"></i> Ang
+                    pangungusap ng mga bingi/pipi ay barok o walang tamang
+                    gramtika
+                  </p>
+                </div>
+              </div>
+              <div class="video-container">
+                <img src="gifs/pangalan.gif" />
+              </div>
+            </div>
+          </div>
+          <div class="word1" id="salamat">
+            <div class="word-content">
+              <div class="definition-container">
+                <h4>Salamat</h4>
+                <div class="definition">
+                  <p>
+                    <span style="font-weight: 900">:</span>
+                    pagpapahayag ng pagtanaw sa magandang gawâ at mapagbigay na
+                    kilos ng kapuwa
+                  </p>
+                </div>
+                <div class="reminder">
+                  <p>
+                    <i class="fa-solid fa-circle-exclamation"></i> Ang
+                    pangungusap ng mga bingi/pipi ay barok o walang tamang
+                    gramtika
+                  </p>
+                </div>
+              </div>
+              <div class="video-container">
+                <img src="gifs/salamat.gif" />
+              </div>
+            </div>
+          </div>
+          <div class="word1" id="signlanguage">
+            <div class="word-content">
+              <div class="definition-container">
+                <h4>Sign Language</h4>
+                <div class="definition">
+                  <p>
+                    <span style="font-weight: 900">:</span>
+                    isang uri ng manwal at biswal (namamasdan ng mata) na
+                    komunikasyon na ginagamit ng mga mamamayang bingi at pipi
+                  </p>
+                </div>
+                <div class="reminder">
+                  <p>
+                    <i class="fa-solid fa-circle-exclamation"></i> Ang
+                    pangungusap ng mga bingi/pipi ay barok o walang tamang
+                    gramtika
+                  </p>
+                </div>
+              </div>
+              <div class="video-container">
+                <img src="gifs/signlanguage.gif" />
+              </div>
+            </div>
+          </div>
+          <div class="word1" id="trabaho">
+            <div class="word-content">
+              <div class="definition-container">
+                <h4>Trabaho</h4>
+                <div class="definition">
+                  <p>
+                    <span style="font-weight: 900">:</span>
+                    hanapbuhay o gawain
+                  </p>
+                </div>
+                <div class="reminder">
+                  <p>
+                    <i class="fa-solid fa-circle-exclamation"></i> Ang
+                    pangungusap ng mga bingi/pipi ay barok o walang tamang
+                    gramtika
+                  </p>
+                </div>
+              </div>
+              <div class="video-container">
+                <img src="gifs/trabaho.gif" />
+              </div>
+            </div>
+          </div>
+          <div class="word1" id="tulong">
+            <div class="word-content">
+              <div class="definition-container">
+                <h4>Tulong</h4>
+                <div class="definition">
+                  <p>
+                    <span style="font-weight: 900">:</span>
+                    hanapbuhay o gawain
+                  </p>
+                </div>
+                <div class="reminder">
+                  <p>
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    Ang pangungusap ng mga bingi/pipi ay barok o walang tamang
+                    gramtika
+                  </p>
+                </div>
+              </div>
+              <div class="video-container">
+                <img src="gifs/tulong.gif" />
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="previous-button">Previous</button>
+            <button class="next-button">Next</button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- CORDOVA -->
@@ -837,6 +880,5 @@
 
     <!-- CUSTOM JS -->
     <script src="js/vocab.js"></script>
-</body>
-
+  </body>
 </html>
