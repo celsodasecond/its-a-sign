@@ -801,7 +801,6 @@ function goToEasyRound(round)
 								points++;
 								updatePoints(points);
 								console.log(points);
-								displayScore.textContent = timeLeft;
 
 								// clear easyRandomSignsUsed
 								signsUsed.splice(0);
@@ -825,6 +824,8 @@ function goToEasyRound(round)
 								console.log(bestSentence);
 
 								console.log("------------- FINISHED -------------");
+								displayScore.textContent = timeLeft;
+								displaySentence.textContent = bestSentence;
 
 								gameOverText.innerHTML = "Congratulations!";
 								gameOverContainer.style.display = "flex";
@@ -1012,7 +1013,6 @@ function goToIntermediateRound(round)
 								points += 2;
 								updatePoints(points);
 								console.log(points);
-								displayScore.textContent = timeLeft;
 
 								// clear easyRandomSignsUsed
 								intermediateRandomSignsUsed.splice(0);
@@ -1036,6 +1036,8 @@ function goToIntermediateRound(round)
 								console.log(bestSentence);
 
 								console.log("------------- FINISHED -------------");
+								displayScore.textContent = timeLeft;
+								displaySentence.textContent = bestSentence;
 
 								gameOverText.innerHTML = "CONGRATULATIONS!";
 								gameOverContainer.style.display = "flex";
@@ -1234,7 +1236,6 @@ function goToHardRound(round)
 								points += 3;
 								updatePoints(points);
 								console.log(points);
-								displayScore.textContent = timeLeft;
 
 								// clear easyRandomSignsUsed
 								hardRandomSignsUsed.splice(0);
@@ -1258,6 +1259,8 @@ function goToHardRound(round)
 								console.log(bestSentence);
 
 								console.log("------------- FINISHED -------------");
+								displayScore.textContent = timeLeft;
+								displaySentence.textContent = bestSentence;
 
 								gameOverText.innerHTML = "CONGRATULATIONS!";
 								gameOverContainer.style.display = "flex";
